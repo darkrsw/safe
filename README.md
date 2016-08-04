@@ -11,7 +11,7 @@ but note that we use **sbt** instead of **ant** to build SAFE, which required sl
 
 ### Introduction
 
-SAFE is a scalable and pluggable analysis frameowkr for JavaScript web applications developed by the Programming Language Research Group at KAIST:
+SAFE is a scalable and pluggable analysis framework for JavaScript web applications developed by the Programming Language Research Group at KAIST:
 
     http://plrg.kaist.ac.kr
 
@@ -94,4 +94,3 @@ http://download.eclipse.org/e4/downloads/drops/S-0.17-201501051100/repository/
  * Double click any fragments to view the duplicated portion in the text editor.
  * Select two duplicated fragments from the same group and compare their differences using **Compare** from the toolbar.
  * Select at least two duplicated fragments from the same group and view the refactoring suggestions using **Pull Up Method** from the toolbar.
-
