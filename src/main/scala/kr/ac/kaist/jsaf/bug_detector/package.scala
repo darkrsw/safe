@@ -33,7 +33,9 @@ package object bug_detector {
   type BugId          = Int
   type BugType        = Int
   type BugEntry       = (BugId, String, SourceLoc, SourceLoc, Int, String)
+  type BugEntry2      = (BugId, Int, String, SourceLoc, SourceLoc, Int, String)
   type BugList        = List[BugEntry]
+  type BugList2       = List[BugEntry2]
   type BugMap         = MMap[BugKind, (BugType, String, Int)]
   type TraceEntry     = (CFGInst, CallContext)
   type TraceMap       = Map[BugId, TraceEntry]

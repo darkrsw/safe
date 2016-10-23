@@ -1,0 +1,1138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a name="kr" class="extype" href="../../../../package.html">kr</a>.<a name="kr.ac" class="extype" href="../../../package.html">ac</a>.<a name="kr.ac.kaist" class="extype" href="../../package.html">kaist</a>.<a name="kr.ac.kaist.jsaf" class="extype" href="../package.html">jsaf</a>.<a name="kr.ac.kaist.jsaf.nodes" class="extype" href="package.html">nodes</a></p>
+        <h1>WNodeVisitorLambda</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WNodeVisitorLambda</span><span class="tparams">[<span name="RetType">RetType</span>]</span><span class="result"> extends <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.WNode" class="extype" href="WNode.html">WNode</a>, RetType] with <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a>[RetType]</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a>[RetType], <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a>[RetType], <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.WNode" class="extype" href="WNode.html">WNode</a>, RetType], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a name="kr.ac.kaist.jsaf.nodes.WNodeAbstractVisitor" class="extype" href="WNodeAbstractVisitor.html">WNodeAbstractVisitor</a></div>
+        </div></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="in"><span>WNodeVisitorLambda</span></li><li name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="in"><span>WNodeVisitor</span></li><li name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="in"><span>WIDLVisitor</span></li><li name="edu.rice.cs.plt.lambda.Lambda" class="in"><span>Lambda</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#this" data-isabs="false">
+      <a id="this:WNodeVisitorLambda[RetType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WNodeVisitorLambda</span><span class="params">()</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Abstract Value Members</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWAnyType" data-isabs="true">
+      <a id="forWAnyType(WAnyType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWAnyType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WAnyType" class="extype" href="WAnyType.html">WAnyType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWArgument" data-isabs="true">
+      <a id="forWArgument(WArgument):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWArgument</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WArgument" class="extype" href="WArgument.html">WArgument</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWArrayType" data-isabs="true">
+      <a id="forWArrayType(WArrayType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWArrayType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WArrayType" class="extype" href="WArrayType.html">WArrayType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWAttribute" data-isabs="true">
+      <a id="forWAttribute(WAttribute):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWAttribute</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WAttribute" class="extype" href="WAttribute.html">WAttribute</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWBoolean" data-isabs="true">
+      <a id="forWBoolean(WBoolean):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWBoolean</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WBoolean" class="extype" href="WBoolean.html">WBoolean</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWCallback" data-isabs="true">
+      <a id="forWCallback(WCallback):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWCallback</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WCallback" class="extype" href="WCallback.html">WCallback</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWConst" data-isabs="true">
+      <a id="forWConst(WConst):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWConst</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WConst" class="extype" href="WConst.html">WConst</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWDictionary" data-isabs="true">
+      <a id="forWDictionary(WDictionary):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWDictionary</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WDictionary" class="extype" href="WDictionary.html">WDictionary</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWDictionaryMember" data-isabs="true">
+      <a id="forWDictionaryMember(WDictionaryMember):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWDictionaryMember</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WDictionaryMember" class="extype" href="WDictionaryMember.html">WDictionaryMember</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAArray" data-isabs="true">
+      <a id="forWEAArray(WEAArray):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAArray</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAArray" class="extype" href="WEAArray.html">WEAArray</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAAttribute" data-isabs="true">
+      <a id="forWEAAttribute(WEAAttribute):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAAttribute</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAAttribute" class="extype" href="WEAAttribute.html">WEAAttribute</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEACallback" data-isabs="true">
+      <a id="forWEACallback(WEACallback):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEACallback</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEACallback" class="extype" href="WEACallback.html">WEACallback</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEACallbackFunctionOnly" data-isabs="true">
+      <a id="forWEACallbackFunctionOnly(WEACallbackFunctionOnly):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEACallbackFunctionOnly</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEACallbackFunctionOnly" class="extype" href="WEACallbackFunctionOnly.html">WEACallbackFunctionOnly</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAConst" data-isabs="true">
+      <a id="forWEAConst(WEAConst):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAConst</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAConst" class="extype" href="WEAConst.html">WEAConst</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAConstructor" data-isabs="true">
+      <a id="forWEAConstructor(WEAConstructor):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAConstructor</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAConstructor" class="extype" href="WEAConstructor.html">WEAConstructor</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEACreator" data-isabs="true">
+      <a id="forWEACreator(WEACreator):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEACreator</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEACreator" class="extype" href="WEACreator.html">WEACreator</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEADeleter" data-isabs="true">
+      <a id="forWEADeleter(WEADeleter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEADeleter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEADeleter" class="extype" href="WEADeleter.html">WEADeleter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEADictionary" data-isabs="true">
+      <a id="forWEADictionary(WEADictionary):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEADictionary</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEADictionary" class="extype" href="WEADictionary.html">WEADictionary</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAEllipsis" data-isabs="true">
+      <a id="forWEAEllipsis(WEAEllipsis):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAEllipsis</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAEllipsis" class="extype" href="WEAEllipsis.html">WEAEllipsis</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAEnum" data-isabs="true">
+      <a id="forWEAEnum(WEAEnum):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAEnum</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAEnum" class="extype" href="WEAEnum.html">WEAEnum</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAException" data-isabs="true">
+      <a id="forWEAException(WEAException):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAException</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAException" class="extype" href="WEAException.html">WEAException</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAGetter" data-isabs="true">
+      <a id="forWEAGetter(WEAGetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAGetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAGetter" class="extype" href="WEAGetter.html">WEAGetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAImplements" data-isabs="true">
+      <a id="forWEAImplements(WEAImplements):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAImplements</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAImplements" class="extype" href="WEAImplements.html">WEAImplements</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAInherit" data-isabs="true">
+      <a id="forWEAInherit(WEAInherit):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAInherit</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAInherit" class="extype" href="WEAInherit.html">WEAInherit</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAInterface" data-isabs="true">
+      <a id="forWEAInterface(WEAInterface):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAInterface</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAInterface" class="extype" href="WEAInterface.html">WEAInterface</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEALegacycaller" data-isabs="true">
+      <a id="forWEALegacycaller(WEALegacycaller):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEALegacycaller</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEALegacycaller" class="extype" href="WEALegacycaller.html">WEALegacycaller</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEANoInterfaceObject" data-isabs="true">
+      <a id="forWEANoInterfaceObject(WEANoInterfaceObject):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEANoInterfaceObject</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEANoInterfaceObject" class="extype" href="WEANoInterfaceObject.html">WEANoInterfaceObject</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAOptional" data-isabs="true">
+      <a id="forWEAOptional(WEAOptional):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAOptional</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAOptional" class="extype" href="WEAOptional.html">WEAOptional</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAPartial" data-isabs="true">
+      <a id="forWEAPartial(WEAPartial):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAPartial</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAPartial" class="extype" href="WEAPartial.html">WEAPartial</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAQuestion" data-isabs="true">
+      <a id="forWEAQuestion(WEAQuestion):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAQuestion</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAQuestion" class="extype" href="WEAQuestion.html">WEAQuestion</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAReadonly" data-isabs="true">
+      <a id="forWEAReadonly(WEAReadonly):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAReadonly</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAReadonly" class="extype" href="WEAReadonly.html">WEAReadonly</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEASetter" data-isabs="true">
+      <a id="forWEASetter(WEASetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEASetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEASetter" class="extype" href="WEASetter.html">WEASetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAStatic" data-isabs="true">
+      <a id="forWEAStatic(WEAStatic):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAStatic</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAStatic" class="extype" href="WEAStatic.html">WEAStatic</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAString" data-isabs="true">
+      <a id="forWEAString(WEAString):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAString</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAString" class="extype" href="WEAString.html">WEAString</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAStringifier" data-isabs="true">
+      <a id="forWEAStringifier(WEAStringifier):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAStringifier</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAStringifier" class="extype" href="WEAStringifier.html">WEAStringifier</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEATypedef" data-isabs="true">
+      <a id="forWEATypedef(WEATypedef):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEATypedef</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEATypedef" class="extype" href="WEATypedef.html">WEATypedef</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEAUnrestricted" data-isabs="true">
+      <a id="forWEAUnrestricted(WEAUnrestricted):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEAUnrestricted</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEAUnrestricted" class="extype" href="WEAUnrestricted.html">WEAUnrestricted</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWEnum" data-isabs="true">
+      <a id="forWEnum(WEnum):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWEnum</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WEnum" class="extype" href="WEnum.html">WEnum</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWException" data-isabs="true">
+      <a id="forWException(WException):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWException</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WException" class="extype" href="WException.html">WException</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWExceptionField" data-isabs="true">
+      <a id="forWExceptionField(WExceptionField):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWExceptionField</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WExceptionField" class="extype" href="WExceptionField.html">WExceptionField</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWFloat" data-isabs="true">
+      <a id="forWFloat(WFloat):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWFloat</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WFloat" class="extype" href="WFloat.html">WFloat</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWId" data-isabs="true">
+      <a id="forWId(WId):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWId</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WId" class="extype" href="WId.html">WId</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWImplementsStatement" data-isabs="true">
+      <a id="forWImplementsStatement(WImplementsStatement):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWImplementsStatement</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WImplementsStatement" class="extype" href="WImplementsStatement.html">WImplementsStatement</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWInteger" data-isabs="true">
+      <a id="forWInteger(WInteger):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWInteger</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WInteger" class="extype" href="WInteger.html">WInteger</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWInterface" data-isabs="true">
+      <a id="forWInterface(WInterface):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWInterface</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WInterface" class="extype" href="WInterface.html">WInterface</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWModule" data-isabs="true">
+      <a id="forWModule(WModule):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWModule</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WModule" class="extype" href="WModule.html">WModule</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWNamedType" data-isabs="true">
+      <a id="forWNamedType(WNamedType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWNamedType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WNamedType" class="extype" href="WNamedType.html">WNamedType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWNull" data-isabs="true">
+      <a id="forWNull(WNull):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWNull</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WNull" class="extype" href="WNull.html">WNull</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWOperation" data-isabs="true">
+      <a id="forWOperation(WOperation):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWOperation</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WOperation" class="extype" href="WOperation.html">WOperation</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQCreator" data-isabs="true">
+      <a id="forWQCreator(WQCreator):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQCreator</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQCreator" class="extype" href="WQCreator.html">WQCreator</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQDeleter" data-isabs="true">
+      <a id="forWQDeleter(WQDeleter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQDeleter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQDeleter" class="extype" href="WQDeleter.html">WQDeleter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQGetter" data-isabs="true">
+      <a id="forWQGetter(WQGetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQGetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQGetter" class="extype" href="WQGetter.html">WQGetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQId" data-isabs="true">
+      <a id="forWQId(WQId):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQId</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQId" class="extype" href="WQId.html">WQId</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQLegacycaller" data-isabs="true">
+      <a id="forWQLegacycaller(WQLegacycaller):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQLegacycaller</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQLegacycaller" class="extype" href="WQLegacycaller.html">WQLegacycaller</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQSetter" data-isabs="true">
+      <a id="forWQSetter(WQSetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQSetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQSetter" class="extype" href="WQSetter.html">WQSetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWQStatic" data-isabs="true">
+      <a id="forWQStatic(WQStatic):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWQStatic</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WQStatic" class="extype" href="WQStatic.html">WQStatic</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWSequenceType" data-isabs="true">
+      <a id="forWSequenceType(WSequenceType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWSequenceType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WSequenceType" class="extype" href="WSequenceType.html">WSequenceType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWString" data-isabs="true">
+      <a id="forWString(WString):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWString</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WString" class="extype" href="WString.html">WString</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWTSArray" data-isabs="true">
+      <a id="forWTSArray(WTSArray):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWTSArray</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WTSArray" class="extype" href="WTSArray.html">WTSArray</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWTSQuestion" data-isabs="true">
+      <a id="forWTSQuestion(WTSQuestion):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWTSQuestion</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WTSQuestion" class="extype" href="WTSQuestion.html">WTSQuestion</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWTypedef" data-isabs="true">
+      <a id="forWTypedef(WTypedef):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWTypedef</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WTypedef" class="extype" href="WTypedef.html">WTypedef</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#forWUnionType" data-isabs="true">
+      <a id="forWUnionType(WUnionType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWUnionType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WUnionType" class="extype" href="WUnionType.html">WUnionType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a> → <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Concrete Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda#value" data-isabs="false">
+      <a id="value(WNode):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.WNode" class="extype" href="WNode.html">WNode</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.WNodeVisitorLambda" class="extype" href="">WNodeVisitorLambda</a> → Lambda</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="parent">
+              <h3>Inherited from <a name="kr.ac.kaist.jsaf.nodes.WNodeVisitor" class="extype" href="WNodeVisitor.html">WNodeVisitor</a>[RetType]</h3>
+            </div><div name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="parent">
+              <h3>Inherited from <a name="kr.ac.kaist.jsaf.nodes.WIDLVisitor" class="extype" href="WIDLVisitor.html">WIDLVisitor</a>[RetType]</h3>
+            </div><div name="edu.rice.cs.plt.lambda.Lambda" class="parent">
+              <h3>Inherited from <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.WNode" class="extype" href="WNode.html">WNode</a>, RetType]</h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

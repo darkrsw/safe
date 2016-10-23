@@ -1,0 +1,1760 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a name="kr" class="extype" href="../../../../package.html">kr</a>.<a name="kr.ac" class="extype" href="../../../package.html">ac</a>.<a name="kr.ac.kaist" class="extype" href="../../package.html">kaist</a>.<a name="kr.ac.kaist.jsaf" class="extype" href="../package.html">jsaf</a>.<a name="kr.ac.kaist.jsaf.nodes" class="extype" href="package.html">nodes</a></p>
+        <h1>AbstractNodeVisitorLambda</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AbstractNodeVisitorLambda</span><span class="tparams">[<span name="RetType">RetType</span>]</span><span class="result"> extends <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.AbstractNode" class="extype" href="AbstractNode.html">AbstractNode</a>, RetType] with <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a>[RetType]</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a>[RetType], <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.AbstractNode" class="extype" href="AbstractNode.html">AbstractNode</a>, RetType], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeAbstractVisitor" class="extype" href="AbstractNodeAbstractVisitor.html">AbstractNodeAbstractVisitor</a>, <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeDepthFirstVisitor" class="extype" href="AbstractNodeDepthFirstVisitor.html">AbstractNodeDepthFirstVisitor</a>, <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeUpdateVisitor" class="extype" href="AbstractNodeUpdateVisitor.html">AbstractNodeUpdateVisitor</a></div>
+        </div></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="in"><span>AbstractNodeVisitorLambda</span></li><li name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="in"><span>AbstractNodeVisitor</span></li><li name="edu.rice.cs.plt.lambda.Lambda" class="in"><span>Lambda</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#this" data-isabs="false">
+      <a id="this:AbstractNodeVisitorLambda[RetType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AbstractNodeVisitorLambda</span><span class="params">()</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Abstract Value Members</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbClsDecl" data-isabs="true">
+      <a id="forAmbClsDecl(AmbClsDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbClsDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbClsDecl" class="extype" href="AmbClsDecl.html">AmbClsDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbCnstDecl" data-isabs="true">
+      <a id="forAmbCnstDecl(AmbCnstDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbCnstDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbCnstDecl" class="extype" href="AmbCnstDecl.html">AmbCnstDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbEnumDecl" data-isabs="true">
+      <a id="forAmbEnumDecl(AmbEnumDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbEnumDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbEnumDecl" class="extype" href="AmbEnumDecl.html">AmbEnumDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbEnumMem" data-isabs="true">
+      <a id="forAmbEnumMem(AmbEnumMem):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbEnumMem</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbEnumMem" class="extype" href="AmbEnumMem.html">AmbEnumMem</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbExtModDecl" data-isabs="true">
+      <a id="forAmbExtModDecl(AmbExtModDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbExtModDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbExtModDecl" class="extype" href="AmbExtModDecl.html">AmbExtModDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbExtModElt" data-isabs="true">
+      <a id="forAmbExtModElt(AmbExtModElt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbExtModElt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbExtModElt" class="extype" href="AmbExtModElt.html">AmbExtModElt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbFunDecl" data-isabs="true">
+      <a id="forAmbFunDecl(AmbFunDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbFunDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbFunDecl" class="extype" href="AmbFunDecl.html">AmbFunDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbIndDecl" data-isabs="true">
+      <a id="forAmbIndDecl(AmbIndDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbIndDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbIndDecl" class="extype" href="AmbIndDecl.html">AmbIndDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbMemDecl" data-isabs="true">
+      <a id="forAmbMemDecl(AmbMemDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbMemDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbMemDecl" class="extype" href="AmbMemDecl.html">AmbMemDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbModDecl" data-isabs="true">
+      <a id="forAmbModDecl(AmbModDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbModDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbModDecl" class="extype" href="AmbModDecl.html">AmbModDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbModElt" data-isabs="true">
+      <a id="forAmbModElt(AmbModElt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbModElt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbModElt" class="extype" href="AmbModElt.html">AmbModElt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAmbVarDecl" data-isabs="true">
+      <a id="forAmbVarDecl(AmbVarDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAmbVarDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AmbVarDecl" class="extype" href="AmbVarDecl.html">AmbVarDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAnonymousFnName" data-isabs="true">
+      <a id="forAnonymousFnName(AnonymousFnName):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAnonymousFnName</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AnonymousFnName" class="extype" href="AnonymousFnName.html">AnonymousFnName</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAnyT" data-isabs="true">
+      <a id="forAnyT(AnyT):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAnyT</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AnyT" class="extype" href="AnyT.html">AnyT</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forArrayExpr" data-isabs="true">
+      <a id="forArrayExpr(ArrayExpr):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forArrayExpr</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ArrayExpr" class="extype" href="ArrayExpr.html">ArrayExpr</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forArrayNumberExpr" data-isabs="true">
+      <a id="forArrayNumberExpr(ArrayNumberExpr):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forArrayNumberExpr</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ArrayNumberExpr" class="extype" href="ArrayNumberExpr.html">ArrayNumberExpr</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forArrayType" data-isabs="true">
+      <a id="forArrayType(ArrayType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forArrayType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ArrayType" class="extype" href="ArrayType.html">ArrayType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forAssignOpApp" data-isabs="true">
+      <a id="forAssignOpApp(AssignOpApp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forAssignOpApp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AssignOpApp" class="extype" href="AssignOpApp.html">AssignOpApp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forBlock" data-isabs="true">
+      <a id="forBlock(Block):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forBlock</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Block" class="extype" href="Block.html">Block</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forBool" data-isabs="true">
+      <a id="forBool(Bool):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forBool</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Bool" class="extype" href="Bool.html">Bool</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forBoolT" data-isabs="true">
+      <a id="forBoolT(BoolT):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forBoolT</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.BoolT" class="extype" href="BoolT.html">BoolT</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forBracket" data-isabs="true">
+      <a id="forBracket(Bracket):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forBracket</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Bracket" class="extype" href="Bracket.html">Bracket</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forBreak" data-isabs="true">
+      <a id="forBreak(Break):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forBreak</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Break" class="extype" href="Break.html">Break</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forCallSig" data-isabs="true">
+      <a id="forCallSig(CallSig):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forCallSig</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.CallSig" class="extype" href="CallSig.html">CallSig</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forCase" data-isabs="true">
+      <a id="forCase(Case):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forCase</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Case" class="extype" href="Case.html">Case</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forCatch" data-isabs="true">
+      <a id="forCatch(Catch):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forCatch</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Catch" class="extype" href="Catch.html">Catch</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forComment" data-isabs="true">
+      <a id="forComment(Comment):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forComment</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Comment" class="extype" href="Comment.html">Comment</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forCond" data-isabs="true">
+      <a id="forCond(Cond):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forCond</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Cond" class="extype" href="Cond.html">Cond</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forConstructSig" data-isabs="true">
+      <a id="forConstructSig(ConstructSig):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forConstructSig</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ConstructSig" class="extype" href="ConstructSig.html">ConstructSig</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forConstructorType" data-isabs="true">
+      <a id="forConstructorType(ConstructorType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forConstructorType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ConstructorType" class="extype" href="ConstructorType.html">ConstructorType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forContinue" data-isabs="true">
+      <a id="forContinue(Continue):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forContinue</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Continue" class="extype" href="Continue.html">Continue</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forDebugger" data-isabs="true">
+      <a id="forDebugger(Debugger):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forDebugger</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Debugger" class="extype" href="Debugger.html">Debugger</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forDoWhile" data-isabs="true">
+      <a id="forDoWhile(DoWhile):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forDoWhile</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.DoWhile" class="extype" href="DoWhile.html">DoWhile</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forDot" data-isabs="true">
+      <a id="forDot(Dot):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forDot</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Dot" class="extype" href="Dot.html">Dot</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forDoubleLiteral" data-isabs="true">
+      <a id="forDoubleLiteral(DoubleLiteral):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forDoubleLiteral</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.DoubleLiteral" class="extype" href="DoubleLiteral.html">DoubleLiteral</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forEmptyStmt" data-isabs="true">
+      <a id="forEmptyStmt(EmptyStmt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forEmptyStmt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.EmptyStmt" class="extype" href="EmptyStmt.html">EmptyStmt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forExprList" data-isabs="true">
+      <a id="forExprList(ExprList):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forExprList</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ExprList" class="extype" href="ExprList.html">ExprList</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forExprStmt" data-isabs="true">
+      <a id="forExprStmt(ExprStmt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forExprStmt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ExprStmt" class="extype" href="ExprStmt.html">ExprStmt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forExprType" data-isabs="true">
+      <a id="forExprType(ExprType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forExprType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ExprType" class="extype" href="ExprType.html">ExprType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forExtImpDecl" data-isabs="true">
+      <a id="forExtImpDecl(ExtImpDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forExtImpDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ExtImpDecl" class="extype" href="ExtImpDecl.html">ExtImpDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forField" data-isabs="true">
+      <a id="forField(Field):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forField</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Field" class="extype" href="Field.html">Field</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forFor" data-isabs="true">
+      <a id="forFor(For):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forFor</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.For" class="extype" href="For.html">For</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forForIn" data-isabs="true">
+      <a id="forForIn(ForIn):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forForIn</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ForIn" class="extype" href="ForIn.html">ForIn</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forForVar" data-isabs="true">
+      <a id="forForVar(ForVar):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forForVar</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ForVar" class="extype" href="ForVar.html">ForVar</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forForVarIn" data-isabs="true">
+      <a id="forForVarIn(ForVarIn):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forForVarIn</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ForVarIn" class="extype" href="ForVarIn.html">ForVarIn</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forFunApp" data-isabs="true">
+      <a id="forFunApp(FunApp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forFunApp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.FunApp" class="extype" href="FunApp.html">FunApp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forFunDecl" data-isabs="true">
+      <a id="forFunDecl(FunDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forFunDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.FunDecl" class="extype" href="FunDecl.html">FunDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forFunExpr" data-isabs="true">
+      <a id="forFunExpr(FunExpr):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forFunExpr</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.FunExpr" class="extype" href="FunExpr.html">FunExpr</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forFunctionType" data-isabs="true">
+      <a id="forFunctionType(FunctionType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forFunctionType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.FunctionType" class="extype" href="FunctionType.html">FunctionType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forGetProp" data-isabs="true">
+      <a id="forGetProp(GetProp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forGetProp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.GetProp" class="extype" href="GetProp.html">GetProp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forId" data-isabs="true">
+      <a id="forId(Id):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forId</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Id" class="extype" href="Id.html">Id</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forIf" data-isabs="true">
+      <a id="forIf(If):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forIf</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.If" class="extype" href="If.html">If</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forIndexSig" data-isabs="true">
+      <a id="forIndexSig(IndexSig):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forIndexSig</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.IndexSig" class="extype" href="IndexSig.html">IndexSig</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forInfixOpApp" data-isabs="true">
+      <a id="forInfixOpApp(InfixOpApp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forInfixOpApp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.InfixOpApp" class="extype" href="InfixOpApp.html">InfixOpApp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forIntLiteral" data-isabs="true">
+      <a id="forIntLiteral(IntLiteral):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forIntLiteral</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.IntLiteral" class="extype" href="IntLiteral.html">IntLiteral</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forIntfDecl" data-isabs="true">
+      <a id="forIntfDecl(IntfDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forIntfDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.IntfDecl" class="extype" href="IntfDecl.html">IntfDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forLabel" data-isabs="true">
+      <a id="forLabel(Label):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forLabel</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Label" class="extype" href="Label.html">Label</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forLabelStmt" data-isabs="true">
+      <a id="forLabelStmt(LabelStmt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forLabelStmt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.LabelStmt" class="extype" href="LabelStmt.html">LabelStmt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forMethodSig" data-isabs="true">
+      <a id="forMethodSig(MethodSig):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forMethodSig</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.MethodSig" class="extype" href="MethodSig.html">MethodSig</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModDecl" data-isabs="true">
+      <a id="forModDecl(ModDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModDecl" class="extype" href="ModDecl.html">ModDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpAlias" data-isabs="true">
+      <a id="forModExpAlias(ModExpAlias):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpAlias</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpAlias" class="extype" href="ModExpAlias.html">ModExpAlias</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpAssignment" data-isabs="true">
+      <a id="forModExpAssignment(ModExpAssignment):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpAssignment</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpAssignment" class="extype" href="ModExpAssignment.html">ModExpAssignment</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpFunDecl" data-isabs="true">
+      <a id="forModExpFunDecl(ModExpFunDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpFunDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpFunDecl" class="extype" href="ModExpFunDecl.html">ModExpFunDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpGetter" data-isabs="true">
+      <a id="forModExpGetter(ModExpGetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpGetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpGetter" class="extype" href="ModExpGetter.html">ModExpGetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpName" data-isabs="true">
+      <a id="forModExpName(ModExpName):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpName</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpName" class="extype" href="ModExpName.html">ModExpName</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpSetter" data-isabs="true">
+      <a id="forModExpSetter(ModExpSetter):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpSetter</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpSetter" class="extype" href="ModExpSetter.html">ModExpSetter</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpSpecifiers" data-isabs="true">
+      <a id="forModExpSpecifiers(ModExpSpecifiers):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpSpecifiers</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpSpecifiers" class="extype" href="ModExpSpecifiers.html">ModExpSpecifiers</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpStar" data-isabs="true">
+      <a id="forModExpStar(ModExpStar):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpStar</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpStar" class="extype" href="ModExpStar.html">ModExpStar</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpStarFromPath" data-isabs="true">
+      <a id="forModExpStarFromPath(ModExpStarFromPath):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpStarFromPath</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpStarFromPath" class="extype" href="ModExpStarFromPath.html">ModExpStarFromPath</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModExpVarStmt" data-isabs="true">
+      <a id="forModExpVarStmt(ModExpVarStmt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModExpVarStmt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModExpVarStmt" class="extype" href="ModExpVarStmt.html">ModExpVarStmt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModImpAlias" data-isabs="true">
+      <a id="forModImpAlias(ModImpAlias):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModImpAlias</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModImpAlias" class="extype" href="ModImpAlias.html">ModImpAlias</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModImpAliasClause" data-isabs="true">
+      <a id="forModImpAliasClause(ModImpAliasClause):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModImpAliasClause</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModImpAliasClause" class="extype" href="ModImpAliasClause.html">ModImpAliasClause</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModImpDecl" data-isabs="true">
+      <a id="forModImpDecl(ModImpDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModImpDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModImpDecl" class="extype" href="ModImpDecl.html">ModImpDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModImpName" data-isabs="true">
+      <a id="forModImpName(ModImpName):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModImpName</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModImpName" class="extype" href="ModImpName.html">ModImpName</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forModImpSpecifierSet" data-isabs="true">
+      <a id="forModImpSpecifierSet(ModImpSpecifierSet):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forModImpSpecifierSet</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ModImpSpecifierSet" class="extype" href="ModImpSpecifierSet.html">ModImpSpecifierSet</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forNew" data-isabs="true">
+      <a id="forNew(New):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forNew</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.New" class="extype" href="New.html">New</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forNoOp" data-isabs="true">
+      <a id="forNoOp(NoOp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forNoOp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.NoOp" class="extype" href="NoOp.html">NoOp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forNull" data-isabs="true">
+      <a id="forNull(Null):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forNull</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Null" class="extype" href="Null.html">Null</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forNumberT" data-isabs="true">
+      <a id="forNumberT(NumberT):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forNumberT</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.NumberT" class="extype" href="NumberT.html">NumberT</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forObjectExpr" data-isabs="true">
+      <a id="forObjectExpr(ObjectExpr):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forObjectExpr</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ObjectExpr" class="extype" href="ObjectExpr.html">ObjectExpr</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forObjectType" data-isabs="true">
+      <a id="forObjectType(ObjectType):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forObjectType</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.ObjectType" class="extype" href="ObjectType.html">ObjectType</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forOp" data-isabs="true">
+      <a id="forOp(Op):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forOp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Op" class="extype" href="Op.html">Op</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forParam" data-isabs="true">
+      <a id="forParam(Param):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forParam</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Param" class="extype" href="Param.html">Param</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forParenthesized" data-isabs="true">
+      <a id="forParenthesized(Parenthesized):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forParenthesized</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Parenthesized" class="extype" href="Parenthesized.html">Parenthesized</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPath" data-isabs="true">
+      <a id="forPath(Path):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPath</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Path" class="extype" href="Path.html">Path</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPrefixOpApp" data-isabs="true">
+      <a id="forPrefixOpApp(PrefixOpApp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPrefixOpApp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.PrefixOpApp" class="extype" href="PrefixOpApp.html">PrefixOpApp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forProgram" data-isabs="true">
+      <a id="forProgram(Program):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forProgram</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Program" class="extype" href="Program.html">Program</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPropId" data-isabs="true">
+      <a id="forPropId(PropId):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPropId</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.PropId" class="extype" href="PropId.html">PropId</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPropNum" data-isabs="true">
+      <a id="forPropNum(PropNum):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPropNum</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.PropNum" class="extype" href="PropNum.html">PropNum</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPropStr" data-isabs="true">
+      <a id="forPropStr(PropStr):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPropStr</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.PropStr" class="extype" href="PropStr.html">PropStr</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forPropertySig" data-isabs="true">
+      <a id="forPropertySig(PropertySig):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forPropertySig</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.PropertySig" class="extype" href="PropertySig.html">PropertySig</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forRegularExpression" data-isabs="true">
+      <a id="forRegularExpression(RegularExpression):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forRegularExpression</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.RegularExpression" class="extype" href="RegularExpression.html">RegularExpression</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forReturn" data-isabs="true">
+      <a id="forReturn(Return):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forReturn</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Return" class="extype" href="Return.html">Return</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forSetProp" data-isabs="true">
+      <a id="forSetProp(SetProp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forSetProp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.SetProp" class="extype" href="SetProp.html">SetProp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forSourceElements" data-isabs="true">
+      <a id="forSourceElements(SourceElements):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forSourceElements</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.SourceElements" class="extype" href="SourceElements.html">SourceElements</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forStmtUnit" data-isabs="true">
+      <a id="forStmtUnit(StmtUnit):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forStmtUnit</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.StmtUnit" class="extype" href="StmtUnit.html">StmtUnit</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forStringLiteral" data-isabs="true">
+      <a id="forStringLiteral(StringLiteral):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forStringLiteral</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.StringLiteral" class="extype" href="StringLiteral.html">StringLiteral</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forStringT" data-isabs="true">
+      <a id="forStringT(StringT):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forStringT</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.StringT" class="extype" href="StringT.html">StringT</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forSwitch" data-isabs="true">
+      <a id="forSwitch(Switch):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forSwitch</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Switch" class="extype" href="Switch.html">Switch</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTSImpDecl" data-isabs="true">
+      <a id="forTSImpDecl(TSImpDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTSImpDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.TSImpDecl" class="extype" href="TSImpDecl.html">TSImpDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forThis" data-isabs="true">
+      <a id="forThis(This):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forThis</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.This" class="extype" href="This.html">This</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forThrow" data-isabs="true">
+      <a id="forThrow(Throw):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forThrow</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Throw" class="extype" href="Throw.html">Throw</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTry" data-isabs="true">
+      <a id="forTry(Try):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTry</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.Try" class="extype" href="Try.html">Try</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTypeName" data-isabs="true">
+      <a id="forTypeName(TypeName):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTypeName</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.TypeName" class="extype" href="TypeName.html">TypeName</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTypeParam" data-isabs="true">
+      <a id="forTypeParam(TypeParam):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTypeParam</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.TypeParam" class="extype" href="TypeParam.html">TypeParam</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTypeQuery" data-isabs="true">
+      <a id="forTypeQuery(TypeQuery):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTypeQuery</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.TypeQuery" class="extype" href="TypeQuery.html">TypeQuery</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forTypeRef" data-isabs="true">
+      <a id="forTypeRef(TypeRef):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forTypeRef</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.TypeRef" class="extype" href="TypeRef.html">TypeRef</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forUnaryAssignOpApp" data-isabs="true">
+      <a id="forUnaryAssignOpApp(UnaryAssignOpApp):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forUnaryAssignOpApp</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.UnaryAssignOpApp" class="extype" href="UnaryAssignOpApp.html">UnaryAssignOpApp</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forVarDecl" data-isabs="true">
+      <a id="forVarDecl(VarDecl):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forVarDecl</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.VarDecl" class="extype" href="VarDecl.html">VarDecl</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forVarRef" data-isabs="true">
+      <a id="forVarRef(VarRef):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forVarRef</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.VarRef" class="extype" href="VarRef.html">VarRef</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forVarStmt" data-isabs="true">
+      <a id="forVarStmt(VarStmt):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forVarStmt</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.VarStmt" class="extype" href="VarStmt.html">VarStmt</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forVoidT" data-isabs="true">
+      <a id="forVoidT(VoidT):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forVoidT</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.VoidT" class="extype" href="VoidT.html">VoidT</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forWhile" data-isabs="true">
+      <a id="forWhile(While):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWhile</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.While" class="extype" href="While.html">While</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#forWith" data-isabs="true">
+      <a id="forWith(With):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forWith</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.With" class="extype" href="With.html">With</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Concrete Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda#value" data-isabs="false">
+      <a id="value(AbstractNode):RetType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="params">(<span name="that">that: <a name="kr.ac.kaist.jsaf.nodes.AbstractNode" class="extype" href="AbstractNode.html">AbstractNode</a></span>)</span><span class="result">: RetType</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitorLambda" class="extype" href="">AbstractNodeVisitorLambda</a> → Lambda</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="parent">
+              <h3>Inherited from <a name="kr.ac.kaist.jsaf.nodes.AbstractNodeVisitor" class="extype" href="AbstractNodeVisitor.html">AbstractNodeVisitor</a>[RetType]</h3>
+            </div><div name="edu.rice.cs.plt.lambda.Lambda" class="parent">
+              <h3>Inherited from <span name="edu.rice.cs.plt.lambda.Lambda" class="extype">Lambda</span>[<a name="kr.ac.kaist.jsaf.nodes.AbstractNode" class="extype" href="AbstractNode.html">AbstractNode</a>, RetType]</h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

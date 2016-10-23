@@ -1,0 +1,289 @@
+[0m[[0minfo[0m] [0mUpdating {file:/Users/darkrsw/git/safe/}safe...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: kr.ac.kaist.jsaf#jsaf_2.9.2;1.0[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.9.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.9.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.9.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving junit#junit;4.11 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: junit#junit;4.11 {test=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit;4.11[0m
+[0m[[0mdebug[0m] [0m	found junit#junit;4.11 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.3[0m
+[0m[[0mdebug[0m] [0m	found org.hamcrest#hamcrest-core;1.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies junit#junit;4.11->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->junit#junit;4.11 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-compiler;2.9.2 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.9.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.9.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.9.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-compiler;2.9.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-compiler;2.9.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->optional(default)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-compiler;2.9.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-compiler;2.9.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#jline;2.9.2 [optional->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.9.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#jline;2.9.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.9.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.9.2->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]} => dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.9.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.9.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
+[0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.9.2->org.fusesource.jansi#jansi;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#jline;2.9.2 [optional->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies kr.ac.kaist.jsaf#jsaf_2.9.2;1.0->org.scala-lang#scala-library;2.9.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0mignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.9.2!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.9.2!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.9.2!jline.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 523ms :: artifacts dl 11ms[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 compile produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 runtime produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 test produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 provided produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 optional produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 compile-internal produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 runtime-internal produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 test-internal produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 plugin produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 sources produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 docs produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 pom produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for kr.ac.kaist.jsaf#jsaf_2.9.2;1.0 scala-tool produced in /Users/darkrsw/git/safe/target/resolution-cache/reports/kr.ac.kaist.jsaf-jsaf_2.9.2-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (523ms resolve - 11ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m

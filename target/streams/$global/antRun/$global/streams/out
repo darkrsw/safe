@@ -1,0 +1,118 @@
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcleanNodes:[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting directory /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/nodes[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mclean:[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting directory /Users/darkrsw/git/safe/target/scala-2.9.2/classes[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting directory /Users/darkrsw/git/safe/junit-results[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes/JSAst.scala[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes/JSIR.scala[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes/JSRegExp.scala[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes/JSWIDL.scala[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser/JS.java[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser/RegExp.java[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser/WIDL.java[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser/Json.java[0m
+[0m[[0minfo[0m] [0m   [delete] Deleting: /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser/TS.java[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m    [mkdir] Created dir: /Users/darkrsw/git/safe/target/scala-2.9.2/classes[0m
+[0m[[0minfo[0m] [0m    [mkdir] Created dir: /Users/darkrsw/git/safe/junit-results[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcompileCommon:[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckAstgen:[0m
+[0m[[0minfo[0m] [0m     [echo] astgenerators.uptodate: ${astgenerators.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mastGenerators:[0m
+[0m[[0minfo[0m] [0m    [javac] Compiling 7 source files to /Users/darkrsw/git/safe/target/scala-2.9.2/classes[0m
+[0m[[0minfo[0m] [0m    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6[0m
+[0m[[0minfo[0m] [0m    [javac] 1 warning[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckNodesUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] Nodes up to date? ${nodes.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mmakeJS:[0m
+[0m[[0minfo[0m] [0m     [echo] Processing /Users/darkrsw/git/safe/astgen/JS.ast[0m
+[0m[[0minfo[0m] [0m     [move] Moving 169 files to /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/nodes[0m
+[0m[[0minfo[0m] [0m     [move] Moving 1 file to /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mmakeIR:[0m
+[0m[[0minfo[0m] [0m     [echo] Processing /Users/darkrsw/git/safe/astgen/IR.ast[0m
+[0m[[0minfo[0m] [0m     [move] Moving 71 files to /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/nodes[0m
+[0m[[0minfo[0m] [0m     [move] Moving 1 file to /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mmakeRegExp:[0m
+[0m[[0minfo[0m] [0m     [echo] Processing /Users/darkrsw/git/safe/astgen/RegExp.ast[0m
+[0m[[0minfo[0m] [0m     [move] Moving 75 files to /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/nodes[0m
+[0m[[0minfo[0m] [0m     [move] Moving 1 file to /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mmakeWIDL:[0m
+[0m[[0minfo[0m] [0m     [echo] Processing /Users/darkrsw/git/safe/astgen/WIDL.ast[0m
+[0m[[0minfo[0m] [0m     [move] Moving 91 files to /Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/nodes[0m
+[0m[[0minfo[0m] [0m     [move] Moving 1 file to /Users/darkrsw/git/safe/src/main/scala/kr/ac/kaist/jsaf/scala_src/nodes[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mmakeNodes:[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] Parser up to date? ${parser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mparser:[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckJSParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] JavaScript parser up to date? ${jsparser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mjsparser:[0m
+[0m[[0minfo[0m] [0m     [echo] Rebuilding JS... dir=/Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser[0m
+[0m[[0minfo[0m] [0m     [java] Rats! Parser Generator, v. 1.14.1, (C) 2004-2008 Robert Grimm[0m
+[0m[[0minfo[0m] [0m     [java] Processing JS.rats ...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckRegExpParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] JavaScript RegExp parser up to date? ${reparser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mreparser:[0m
+[0m[[0minfo[0m] [0m     [echo] Rebuilding RegExp... dir=/Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser[0m
+[0m[[0minfo[0m] [0m     [java] Rats! Parser Generator, v. 1.14.1, (C) 2004-2008 Robert Grimm[0m
+[0m[[0minfo[0m] [0m     [java] Processing RegExp.rats ...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckWIDLParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] JavaScript WIDL parser up to date? ${widlparser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mwidlparser:[0m
+[0m[[0minfo[0m] [0m     [echo] Rebuilding WIDL... dir=/Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser[0m
+[0m[[0minfo[0m] [0m     [java] Rats! Parser Generator, v. 1.14.1, (C) 2004-2008 Robert Grimm[0m
+[0m[[0minfo[0m] [0m     [java] Processing WIDL.rats ...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckTSParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] TypeScript parser up to date? ${tsparser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mtsparser:[0m
+[0m[[0minfo[0m] [0m     [echo] Rebuilding TS... dir=/Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser[0m
+[0m[[0minfo[0m] [0m     [java] Rats! Parser Generator, v. 1.14.1, (C) 2004-2008 Robert Grimm[0m
+[0m[[0minfo[0m] [0m     [java] Processing TS.rats ...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0minit:[0m
+[0m[[0minfo[0m] [0m     [echo] basedir: .[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcheckJsonParserUptodate:[0m
+[0m[[0minfo[0m] [0m     [echo] JavaScript Json parser up to date? ${reparser.uptodate}[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mjsonparser:[0m
+[0m[[0minfo[0m] [0m     [echo] Rebuilding Json... dir=/Users/darkrsw/git/safe/src/main/java/kr/ac/kaist/jsaf/parser[0m
+[0m[[0minfo[0m] [0m     [java] Rats! Parser Generator, v. 1.14.1, (C) 2004-2008 Robert Grimm[0m
+[0m[[0minfo[0m] [0m     [java] Processing Json.rats ...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mcompile:[0m

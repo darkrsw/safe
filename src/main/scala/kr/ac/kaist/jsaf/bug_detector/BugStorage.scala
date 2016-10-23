@@ -40,6 +40,7 @@ class BugStorage(bugDetector: BugDetector) {
 
   val bugStat: BugStat                = new BugStat(bugDetector)
   private var bugList: BugList        = List()
+  private var bugList2: BugList2      = List()
   private var isSorted: Boolean       = false
   private var traceMap: TraceMap      = Map()
   private var tryList: List[BugId]    = List()
@@ -113,10 +114,13 @@ class BugStorage(bugDetector: BugDetector) {
       /* Add Bug Message */
       bugStat.increaseBugCounter(bugKind, bugType)
       bugList = bugList :+ (newBId, span.getFileNameOnly, span.getBegin, span.getEnd, bugType, fullBugMsg)
+      bugList2 = bugList2 :+ (newBId, bugKind, span.getFileNameOnly, span.getBegin, span.getEnd, bugType, fullBugMsg)
       if (inst != null && callContext != null) traceMap += (newBId -> (inst, callContext)) 
       isSorted = false
     }
   }
+
+  def getBugList() = this.bugList2
 
   def reportDetectedBugs(errorOnly: Boolean, quiet: Boolean): Unit = {
     val isTracingMode = bugDetector.params.opt_ContextTrace

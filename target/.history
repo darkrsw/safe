@@ -1,0 +1,30 @@
+antRun clean compile
+antRun compile
+antRun test
+exit
+antRun clean compile
+compile
+compile\
+compile
+antRun clean compile
+antRun compile
+compile
+exit
+antRun clean compile
+compile
+exit
+antRun compile
+compile
+antRun clean compile
+compile
+exit
+antRun compile
+antRun clean compile
+compile
+exit
+antRun clean compile
+compile
+exit
+antRun clean compile
+compile
+exit

@@ -9,6 +9,7 @@ scalaVersion := "2.9.2"
 publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test"
+// libraryDependencies += "lu.uni" % "repo-utils" % "1.0"
 
 parallelExecution in Test := false
 

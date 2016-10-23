@@ -87,6 +87,20 @@ class BugDetector(_ast: Program, _cfg: CFG, _typing: TypingInterface, quiet: Boo
     bugStorage.reportDetectedBugs(params.opt_ErrorOnly, quiet)
   }
 
+  def detectBug2(): BugStorage = {
+    var startBugDetect : Long = System.nanoTime
+    bugStorage.recordStartTime(startBugDetect)
+    if(!(Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR))
+      ASTDetect.asInstanceOf[ASTDetect].check()
+    traverseCFG;
+    // System.out.println("traverseCFG took "+((System.nanoTime - startBugDetect) / 1000000000.0))
+    startBugDetect = System.nanoTime
+    FinalDetect.check(cfg)
+    //System.out.println("FinalDetect took "+((System.nanoTime - startBugDetect) / 1000000000.0))
+
+    return bugStorage
+  }
+
   def isUserNode(node: Node) = cfg.getCmd(node) match {
     case Block(i::_) if !i.getInfo.isDefined => false
     case Block(i::_) if i.getInfo.get.getSpan.getFileName.containsSlice("jquery") => false

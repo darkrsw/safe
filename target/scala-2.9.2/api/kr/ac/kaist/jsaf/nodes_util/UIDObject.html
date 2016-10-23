@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>kr.ac.kaist.jsaf.nodes_util.UIDObject</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a name="kr" class="extype" href="../../../../package.html">kr</a>.<a name="kr.ac" class="extype" href="../../../package.html">ac</a>.<a name="kr.ac.kaist" class="extype" href="../../package.html">kaist</a>.<a name="kr.ac.kaist.jsaf" class="extype" href="../package.html">jsaf</a>.<a name="kr.ac.kaist.jsaf.nodes_util" class="extype" href="package.html">nodes_util</a></p>
+        <h1>UIDObject</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UIDObject</span><span class="result"> extends <a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a></span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a>, <span name="java.io.Serializable" class="extype">Serializable</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a name="kr.ac.kaist.jsaf.nodes.ASTSpanInfo" class="extype" href="../nodes/ASTSpanInfo.html">ASTSpanInfo</a>, <a name="kr.ac.kaist.jsaf.nodes.AbstractNode" class="extype" href="../nodes/AbstractNode.html">AbstractNode</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbClsDecl" class="extype" href="../nodes/AmbClsDecl.html">AmbClsDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbClsElt" class="extype" href="../nodes/AmbClsElt.html">AmbClsElt</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbCnstDecl" class="extype" href="../nodes/AmbCnstDecl.html">AmbCnstDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbDecl" class="extype" href="../nodes/AmbDecl.html">AmbDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbEnumDecl" class="extype" href="../nodes/AmbEnumDecl.html">AmbEnumDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbEnumMem" class="extype" href="../nodes/AmbEnumMem.html">AmbEnumMem</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbExtModDecl" class="extype" href="../nodes/AmbExtModDecl.html">AmbExtModDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbExtModElt" class="extype" href="../nodes/AmbExtModElt.html">AmbExtModElt</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbFunDecl" class="extype" href="../nodes/AmbFunDecl.html">AmbFunDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbIndDecl" class="extype" href="../nodes/AmbIndDecl.html">AmbIndDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbMemDecl" class="extype" href="../nodes/AmbMemDecl.html">AmbMemDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbModDecl" class="extype" href="../nodes/AmbModDecl.html">AmbModDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbModElt" class="extype" href="../nodes/AmbModElt.html">AmbModElt</a>, <a name="kr.ac.kaist.jsaf.nodes.AmbVarDecl" class="extype" href="../nodes/AmbVarDecl.html">AmbVarDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.AnonymousFnName" class="extype" href="../nodes/AnonymousFnName.html">AnonymousFnName</a>, <a name="kr.ac.kaist.jsaf.nodes.AnyT" class="extype" href="../nodes/AnyT.html">AnyT</a>, <a name="kr.ac.kaist.jsaf.nodes.ArrayExpr" class="extype" href="../nodes/ArrayExpr.html">ArrayExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.ArrayNumberExpr" class="extype" href="../nodes/ArrayNumberExpr.html">ArrayNumberExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.ArrayType" class="extype" href="../nodes/ArrayType.html">ArrayType</a>, <a name="kr.ac.kaist.jsaf.nodes.AssignOpApp" class="extype" href="../nodes/AssignOpApp.html">AssignOpApp</a>, <a name="kr.ac.kaist.jsaf.nodes.Block" class="extype" href="../nodes/Block.html">Block</a>, <a name="kr.ac.kaist.jsaf.nodes.Bool" class="extype" href="../nodes/Bool.html">Bool</a>, <a name="kr.ac.kaist.jsaf.nodes.BoolT" class="extype" href="../nodes/BoolT.html">BoolT</a>, <a name="kr.ac.kaist.jsaf.nodes.Bracket" class="extype" href="../nodes/Bracket.html">Bracket</a>, <a name="kr.ac.kaist.jsaf.nodes.Break" class="extype" href="../nodes/Break.html">Break</a>, <a name="kr.ac.kaist.jsaf.nodes.CallSig" class="extype" href="../nodes/CallSig.html">CallSig</a>, <a name="kr.ac.kaist.jsaf.nodes.Case" class="extype" href="../nodes/Case.html">Case</a>, <a name="kr.ac.kaist.jsaf.nodes.Catch" class="extype" href="../nodes/Catch.html">Catch</a>, <a name="kr.ac.kaist.jsaf.nodes.Comment" class="extype" href="../nodes/Comment.html">Comment</a>, <a name="kr.ac.kaist.jsaf.nodes.Cond" class="extype" href="../nodes/Cond.html">Cond</a>, <a name="kr.ac.kaist.jsaf.nodes.ConstructSig" class="extype" href="../nodes/ConstructSig.html">ConstructSig</a>, <a name="kr.ac.kaist.jsaf.nodes.ConstructorType" class="extype" href="../nodes/ConstructorType.html">ConstructorType</a>, <a name="kr.ac.kaist.jsaf.nodes.Continue" class="extype" href="../nodes/Continue.html">Continue</a>, <a name="kr.ac.kaist.jsaf.nodes.Debugger" class="extype" href="../nodes/Debugger.html">Debugger</a>, <a name="kr.ac.kaist.jsaf.nodes.DoWhile" class="extype" href="../nodes/DoWhile.html">DoWhile</a>, <a name="kr.ac.kaist.jsaf.nodes.Dot" class="extype" href="../nodes/Dot.html">Dot</a>, <a name="kr.ac.kaist.jsaf.nodes.DoubleLiteral" class="extype" href="../nodes/DoubleLiteral.html">DoubleLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.EmptyStmt" class="extype" href="../nodes/EmptyStmt.html">EmptyStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.Expr" class="extype" href="../nodes/Expr.html">Expr</a>, <a name="kr.ac.kaist.jsaf.nodes.ExprList" class="extype" href="../nodes/ExprList.html">ExprList</a>, <a name="kr.ac.kaist.jsaf.nodes.ExprStmt" class="extype" href="../nodes/ExprStmt.html">ExprStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.ExprType" class="extype" href="../nodes/ExprType.html">ExprType</a>, <a name="kr.ac.kaist.jsaf.nodes.ExtImpDecl" class="extype" href="../nodes/ExtImpDecl.html">ExtImpDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.Field" class="extype" href="../nodes/Field.html">Field</a>, <a name="kr.ac.kaist.jsaf.nodes.For" class="extype" href="../nodes/For.html">For</a>, <a name="kr.ac.kaist.jsaf.nodes.ForIn" class="extype" href="../nodes/ForIn.html">ForIn</a>, <a name="kr.ac.kaist.jsaf.nodes.ForVar" class="extype" href="../nodes/ForVar.html">ForVar</a>, <a name="kr.ac.kaist.jsaf.nodes.ForVarIn" class="extype" href="../nodes/ForVarIn.html">ForVarIn</a>, <a name="kr.ac.kaist.jsaf.nodes.FunApp" class="extype" href="../nodes/FunApp.html">FunApp</a>, <a name="kr.ac.kaist.jsaf.nodes.FunDecl" class="extype" href="../nodes/FunDecl.html">FunDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.FunExpr" class="extype" href="../nodes/FunExpr.html">FunExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.FunctionType" class="extype" href="../nodes/FunctionType.html">FunctionType</a>, <a name="kr.ac.kaist.jsaf.nodes.Functional" class="extype" href="../nodes/Functional.html">Functional</a>, <a name="kr.ac.kaist.jsaf.nodes.GetProp" class="extype" href="../nodes/GetProp.html">GetProp</a>, <a name="kr.ac.kaist.jsaf.nodes.IRAbstractNode" class="extype" href="../nodes/IRAbstractNode.html">IRAbstractNode</a>, <a name="kr.ac.kaist.jsaf.nodes.IRArgs" class="extype" href="../nodes/IRArgs.html">IRArgs</a>, <a name="kr.ac.kaist.jsaf.nodes.IRArray" class="extype" href="../nodes/IRArray.html">IRArray</a>, <a name="kr.ac.kaist.jsaf.nodes.IRArrayNumber" class="extype" href="../nodes/IRArrayNumber.html">IRArrayNumber</a>, <a name="kr.ac.kaist.jsaf.nodes.IRAssign" class="extype" href="../nodes/IRAssign.html">IRAssign</a>, <a name="kr.ac.kaist.jsaf.nodes.IRBin" class="extype" href="../nodes/IRBin.html">IRBin</a>, <a name="kr.ac.kaist.jsaf.nodes.IRBool" class="extype" href="../nodes/IRBool.html">IRBool</a>, <a name="kr.ac.kaist.jsaf.nodes.IRBreak" class="extype" href="../nodes/IRBreak.html">IRBreak</a>, <a name="kr.ac.kaist.jsaf.nodes.IRCall" class="extype" href="../nodes/IRCall.html">IRCall</a>, <a name="kr.ac.kaist.jsaf.nodes.IRDelete" class="extype" href="../nodes/IRDelete.html">IRDelete</a>, <a name="kr.ac.kaist.jsaf.nodes.IRDeleteProp" class="extype" href="../nodes/IRDeleteProp.html">IRDeleteProp</a>, <a name="kr.ac.kaist.jsaf.nodes.IREval" class="extype" href="../nodes/IREval.html">IREval</a>, <a name="kr.ac.kaist.jsaf.nodes.IRExpr" class="extype" href="../nodes/IRExpr.html">IRExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.IRExprStmt" class="extype" href="../nodes/IRExprStmt.html">IRExprStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.IRField" class="extype" href="../nodes/IRField.html">IRField</a>, <a name="kr.ac.kaist.jsaf.nodes.IRFunDecl" class="extype" href="../nodes/IRFunDecl.html">IRFunDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.IRFunExpr" class="extype" href="../nodes/IRFunExpr.html">IRFunExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.IRFunctional" class="extype" href="../nodes/IRFunctional.html">IRFunctional</a>, <a name="kr.ac.kaist.jsaf.nodes.IRGetProp" class="extype" href="../nodes/IRGetProp.html">IRGetProp</a>, <a name="kr.ac.kaist.jsaf.nodes.IRId" class="extype" href="../nodes/IRId.html">IRId</a>, <a name="kr.ac.kaist.jsaf.nodes.IRIf" class="extype" href="../nodes/IRIf.html">IRIf</a>, <a name="kr.ac.kaist.jsaf.nodes.IRInfoNode" class="extype" href="../nodes/IRInfoNode.html">IRInfoNode</a>, <a name="kr.ac.kaist.jsaf.nodes.IRInternalCall" class="extype" href="../nodes/IRInternalCall.html">IRInternalCall</a>, <a name="kr.ac.kaist.jsaf.nodes.IRLabelStmt" class="extype" href="../nodes/IRLabelStmt.html">IRLabelStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.IRLoad" class="extype" href="../nodes/IRLoad.html">IRLoad</a>, <a name="kr.ac.kaist.jsaf.nodes.IRMember" class="extype" href="../nodes/IRMember.html">IRMember</a>, <a name="kr.ac.kaist.jsaf.nodes.IRNew" class="extype" href="../nodes/IRNew.html">IRNew</a>, <a name="kr.ac.kaist.jsaf.nodes.IRNoOp" class="extype" href="../nodes/IRNoOp.html">IRNoOp</a>, <a name="kr.ac.kaist.jsaf.nodes.IRNull" class="extype" href="../nodes/IRNull.html">IRNull</a>, <a name="kr.ac.kaist.jsaf.nodes.IRNumber" class="extype" href="../nodes/IRNumber.html">IRNumber</a>, <a name="kr.ac.kaist.jsaf.nodes.IRObject" class="extype" href="../nodes/IRObject.html">IRObject</a>, <a name="kr.ac.kaist.jsaf.nodes.IROp" class="extype" href="../nodes/IROp.html">IROp</a>, <a name="kr.ac.kaist.jsaf.nodes.IROpApp" class="extype" href="../nodes/IROpApp.html">IROpApp</a>, <a name="kr.ac.kaist.jsaf.nodes.IRPVal" class="extype" href="../nodes/IRPVal.html">IRPVal</a>, <a name="kr.ac.kaist.jsaf.nodes.IRReturn" class="extype" href="../nodes/IRReturn.html">IRReturn</a>, <a name="kr.ac.kaist.jsaf.nodes.IRRoot" class="extype" href="../nodes/IRRoot.html">IRRoot</a>, <a name="kr.ac.kaist.jsaf.nodes.IRSeq" class="extype" href="../nodes/IRSeq.html">IRSeq</a>, <a name="kr.ac.kaist.jsaf.nodes.IRSetProp" class="extype" href="../nodes/IRSetProp.html">IRSetProp</a>, <a name="kr.ac.kaist.jsaf.nodes.IRSpanInfo" class="extype" href="../nodes/IRSpanInfo.html">IRSpanInfo</a>, <a name="kr.ac.kaist.jsaf.nodes.IRStmt" class="extype" href="../nodes/IRStmt.html">IRStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.IRStmtUnit" class="extype" href="../nodes/IRStmtUnit.html">IRStmtUnit</a>, <a name="kr.ac.kaist.jsaf.nodes.IRStore" class="extype" href="../nodes/IRStore.html">IRStore</a>, <a name="kr.ac.kaist.jsaf.nodes.IRString" class="extype" href="../nodes/IRString.html">IRString</a>, <a name="kr.ac.kaist.jsaf.nodes.IRThis" class="extype" href="../nodes/IRThis.html">IRThis</a>, <a name="kr.ac.kaist.jsaf.nodes.IRThrow" class="extype" href="../nodes/IRThrow.html">IRThrow</a>, <a name="kr.ac.kaist.jsaf.nodes.IRTmpId" class="extype" href="../nodes/IRTmpId.html">IRTmpId</a>, <a name="kr.ac.kaist.jsaf.nodes.IRTry" class="extype" href="../nodes/IRTry.html">IRTry</a>, <a name="kr.ac.kaist.jsaf.nodes.IRUn" class="extype" href="../nodes/IRUn.html">IRUn</a>, <a name="kr.ac.kaist.jsaf.nodes.IRUndef" class="extype" href="../nodes/IRUndef.html">IRUndef</a>, <a name="kr.ac.kaist.jsaf.nodes.IRUserId" class="extype" href="../nodes/IRUserId.html">IRUserId</a>, <a name="kr.ac.kaist.jsaf.nodes.IRVal" class="extype" href="../nodes/IRVal.html">IRVal</a>, <a name="kr.ac.kaist.jsaf.nodes.IRVarStmt" class="extype" href="../nodes/IRVarStmt.html">IRVarStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.IRWhile" class="extype" href="../nodes/IRWhile.html">IRWhile</a>, <a name="kr.ac.kaist.jsaf.nodes.IRWith" class="extype" href="../nodes/IRWith.html">IRWith</a>, <a name="kr.ac.kaist.jsaf.nodes.Id" class="extype" href="../nodes/Id.html">Id</a>, <a name="kr.ac.kaist.jsaf.nodes.IdOrOp" class="extype" href="../nodes/IdOrOp.html">IdOrOp</a>, <a name="kr.ac.kaist.jsaf.nodes.IdOrOpOrAnonymousName" class="extype" href="../nodes/IdOrOpOrAnonymousName.html">IdOrOpOrAnonymousName</a>, <a name="kr.ac.kaist.jsaf.nodes.If" class="extype" href="../nodes/If.html">If</a>, <a name="kr.ac.kaist.jsaf.nodes.IndexSig" class="extype" href="../nodes/IndexSig.html">IndexSig</a>, <a name="kr.ac.kaist.jsaf.nodes.InfixOpApp" class="extype" href="../nodes/InfixOpApp.html">InfixOpApp</a>, <a name="kr.ac.kaist.jsaf.nodes.IntLiteral" class="extype" href="../nodes/IntLiteral.html">IntLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.IntfDecl" class="extype" href="../nodes/IntfDecl.html">IntfDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.LHS" class="extype" href="../nodes/LHS.html">LHS</a>, <a name="kr.ac.kaist.jsaf.nodes.Label" class="extype" href="../nodes/Label.html">Label</a>, <a name="kr.ac.kaist.jsaf.nodes.LabelStmt" class="extype" href="../nodes/LabelStmt.html">LabelStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.Literal" class="extype" href="../nodes/Literal.html">Literal</a>, <a name="kr.ac.kaist.jsaf.nodes.Member" class="extype" href="../nodes/Member.html">Member</a>, <a name="kr.ac.kaist.jsaf.nodes.MethodSig" class="extype" href="../nodes/MethodSig.html">MethodSig</a>, <a name="kr.ac.kaist.jsaf.nodes.ModDecl" class="extype" href="../nodes/ModDecl.html">ModDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpAlias" class="extype" href="../nodes/ModExpAlias.html">ModExpAlias</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpAssignment" class="extype" href="../nodes/ModExpAssignment.html">ModExpAssignment</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpFunDecl" class="extype" href="../nodes/ModExpFunDecl.html">ModExpFunDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpGetter" class="extype" href="../nodes/ModExpGetter.html">ModExpGetter</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpName" class="extype" href="../nodes/ModExpName.html">ModExpName</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpSetter" class="extype" href="../nodes/ModExpSetter.html">ModExpSetter</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpSpecifier" class="extype" href="../nodes/ModExpSpecifier.html">ModExpSpecifier</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpSpecifiers" class="extype" href="../nodes/ModExpSpecifiers.html">ModExpSpecifiers</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpStar" class="extype" href="../nodes/ModExpStar.html">ModExpStar</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpStarFromPath" class="extype" href="../nodes/ModExpStarFromPath.html">ModExpStarFromPath</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExpVarStmt" class="extype" href="../nodes/ModExpVarStmt.html">ModExpVarStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.ModExport" class="extype" href="../nodes/ModExport.html">ModExport</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpAlias" class="extype" href="../nodes/ModImpAlias.html">ModImpAlias</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpAliasClause" class="extype" href="../nodes/ModImpAliasClause.html">ModImpAliasClause</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpDecl" class="extype" href="../nodes/ModImpDecl.html">ModImpDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpName" class="extype" href="../nodes/ModImpName.html">ModImpName</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpSpecifier" class="extype" href="../nodes/ModImpSpecifier.html">ModImpSpecifier</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImpSpecifierSet" class="extype" href="../nodes/ModImpSpecifierSet.html">ModImpSpecifierSet</a>, <a name="kr.ac.kaist.jsaf.nodes.ModImport" class="extype" href="../nodes/ModImport.html">ModImport</a>, <a name="kr.ac.kaist.jsaf.nodes.Modifier" class="extype" href="../nodes/Modifier.html">Modifier</a>, <a name="kr.ac.kaist.jsaf.nodes.Module" class="extype" href="../nodes/Module.html">Module</a>, <a name="kr.ac.kaist.jsaf.nodes.Name" class="extype" href="../nodes/Name.html">Name</a>, <a name="kr.ac.kaist.jsaf.nodes.New" class="extype" href="../nodes/New.html">New</a>, <a name="kr.ac.kaist.jsaf.nodes.NoOp" class="extype" href="../nodes/NoOp.html">NoOp</a>, <a name="kr.ac.kaist.jsaf.nodes.Null" class="extype" href="../nodes/Null.html">Null</a>, <a name="kr.ac.kaist.jsaf.nodes.NumberLiteral" class="extype" href="../nodes/NumberLiteral.html">NumberLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.NumberT" class="extype" href="../nodes/NumberT.html">NumberT</a>, <a name="kr.ac.kaist.jsaf.nodes.ObjectExpr" class="extype" href="../nodes/ObjectExpr.html">ObjectExpr</a>, <a name="kr.ac.kaist.jsaf.nodes.ObjectType" class="extype" href="../nodes/ObjectType.html">ObjectType</a>, <a name="kr.ac.kaist.jsaf.nodes.Op" class="extype" href="../nodes/Op.html">Op</a>, <a name="kr.ac.kaist.jsaf.nodes.Param" class="extype" href="../nodes/Param.html">Param</a>, <a name="kr.ac.kaist.jsaf.nodes.Parenthesized" class="extype" href="../nodes/Parenthesized.html">Parenthesized</a>, <a name="kr.ac.kaist.jsaf.nodes.Path" class="extype" href="../nodes/Path.html">Path</a>, <a name="kr.ac.kaist.jsaf.nodes.PredefType" class="extype" href="../nodes/PredefType.html">PredefType</a>, <a name="kr.ac.kaist.jsaf.nodes.PrefixOpApp" class="extype" href="../nodes/PrefixOpApp.html">PrefixOpApp</a>, <a name="kr.ac.kaist.jsaf.nodes.PrivateMod" class="extype" href="../nodes/PrivateMod.html">PrivateMod</a>, <a name="kr.ac.kaist.jsaf.nodes.Program" class="extype" href="../nodes/Program.html">Program</a>, <a name="kr.ac.kaist.jsaf.nodes.PropId" class="extype" href="../nodes/PropId.html">PropId</a>, <a name="kr.ac.kaist.jsaf.nodes.PropNum" class="extype" href="../nodes/PropNum.html">PropNum</a>, <a name="kr.ac.kaist.jsaf.nodes.PropStr" class="extype" href="../nodes/PropStr.html">PropStr</a>, <a name="kr.ac.kaist.jsaf.nodes.Property" class="extype" href="../nodes/Property.html">Property</a>, <a name="kr.ac.kaist.jsaf.nodes.PropertySig" class="extype" href="../nodes/PropertySig.html">PropertySig</a>, <a name="kr.ac.kaist.jsaf.nodes.PublicMod" class="extype" href="../nodes/PublicMod.html">PublicMod</a>, <a name="kr.ac.kaist.jsaf.nodes.RegularExpression" class="extype" href="../nodes/RegularExpression.html">RegularExpression</a>, <a name="kr.ac.kaist.jsaf.nodes.Return" class="extype" href="../nodes/Return.html">Return</a>, <a name="kr.ac.kaist.jsaf.nodes.ScopeBody" class="extype" href="../nodes/ScopeBody.html">ScopeBody</a>, <a name="kr.ac.kaist.jsaf.nodes.SetProp" class="extype" href="../nodes/SetProp.html">SetProp</a>, <a name="kr.ac.kaist.jsaf.nodes.SourceElement" class="extype" href="../nodes/SourceElement.html">SourceElement</a>, <a name="kr.ac.kaist.jsaf.nodes.SourceElements" class="extype" href="../nodes/SourceElements.html">SourceElements</a>, <a name="kr.ac.kaist.jsaf.nodes_util.SpanInfo" class="extype" href="SpanInfo.html">SpanInfo</a>, <a name="kr.ac.kaist.jsaf.nodes.StaticMod" class="extype" href="../nodes/StaticMod.html">StaticMod</a>, <a name="kr.ac.kaist.jsaf.nodes.Stmt" class="extype" href="../nodes/Stmt.html">Stmt</a>, <a name="kr.ac.kaist.jsaf.nodes.StmtUnit" class="extype" href="../nodes/StmtUnit.html">StmtUnit</a>, <a name="kr.ac.kaist.jsaf.nodes.StringLiteral" class="extype" href="../nodes/StringLiteral.html">StringLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.StringT" class="extype" href="../nodes/StringT.html">StringT</a>, <a name="kr.ac.kaist.jsaf.nodes.Switch" class="extype" href="../nodes/Switch.html">Switch</a>, <a name="kr.ac.kaist.jsaf.nodes.TSImpDecl" class="extype" href="../nodes/TSImpDecl.html">TSImpDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.This" class="extype" href="../nodes/This.html">This</a>, <a name="kr.ac.kaist.jsaf.nodes.Throw" class="extype" href="../nodes/Throw.html">Throw</a>, <a name="kr.ac.kaist.jsaf.nodes.TopLevel" class="extype" href="../nodes/TopLevel.html">TopLevel</a>, <a name="kr.ac.kaist.jsaf.nodes.Try" class="extype" href="../nodes/Try.html">Try</a>, <a name="kr.ac.kaist.jsaf.nodes.Type" class="extype" href="../nodes/Type.html">Type</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeLiteral" class="extype" href="../nodes/TypeLiteral.html">TypeLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeMember" class="extype" href="../nodes/TypeMember.html">TypeMember</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeName" class="extype" href="../nodes/TypeName.html">TypeName</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeParam" class="extype" href="../nodes/TypeParam.html">TypeParam</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeQuery" class="extype" href="../nodes/TypeQuery.html">TypeQuery</a>, <a name="kr.ac.kaist.jsaf.nodes.TypeRef" class="extype" href="../nodes/TypeRef.html">TypeRef</a>, <a name="kr.ac.kaist.jsaf.nodes.UnaryAssignOpApp" class="extype" href="../nodes/UnaryAssignOpApp.html">UnaryAssignOpApp</a>, <a name="kr.ac.kaist.jsaf.nodes.VarDecl" class="extype" href="../nodes/VarDecl.html">VarDecl</a>, <a name="kr.ac.kaist.jsaf.nodes.VarRef" class="extype" href="../nodes/VarRef.html">VarRef</a>, <a name="kr.ac.kaist.jsaf.nodes.VarStmt" class="extype" href="../nodes/VarStmt.html">VarStmt</a>, <a name="kr.ac.kaist.jsaf.nodes.VoidT" class="extype" href="../nodes/VoidT.html">VoidT</a>, <a name="kr.ac.kaist.jsaf.nodes.WAnyType" class="extype" href="../nodes/WAnyType.html">WAnyType</a>, <a name="kr.ac.kaist.jsaf.nodes.WArgument" class="extype" href="../nodes/WArgument.html">WArgument</a>, <a name="kr.ac.kaist.jsaf.nodes.WArrayType" class="extype" href="../nodes/WArrayType.html">WArrayType</a>, <a name="kr.ac.kaist.jsaf.nodes.WAttribute" class="extype" href="../nodes/WAttribute.html">WAttribute</a>, <a name="kr.ac.kaist.jsaf.nodes.WBoolean" class="extype" href="../nodes/WBoolean.html">WBoolean</a>, <a name="kr.ac.kaist.jsaf.nodes.WCallback" class="extype" href="../nodes/WCallback.html">WCallback</a>, <a name="kr.ac.kaist.jsaf.nodes.WConst" class="extype" href="../nodes/WConst.html">WConst</a>, <a name="kr.ac.kaist.jsaf.nodes.WDefinition" class="extype" href="../nodes/WDefinition.html">WDefinition</a>, <a name="kr.ac.kaist.jsaf.nodes.WDictionary" class="extype" href="../nodes/WDictionary.html">WDictionary</a>, <a name="kr.ac.kaist.jsaf.nodes.WDictionaryMember" class="extype" href="../nodes/WDictionaryMember.html">WDictionaryMember</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAArray" class="extype" href="../nodes/WEAArray.html">WEAArray</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAAttribute" class="extype" href="../nodes/WEAAttribute.html">WEAAttribute</a>, <a name="kr.ac.kaist.jsaf.nodes.WEACallback" class="extype" href="../nodes/WEACallback.html">WEACallback</a>, <a name="kr.ac.kaist.jsaf.nodes.WEACallbackFunctionOnly" class="extype" href="../nodes/WEACallbackFunctionOnly.html">WEACallbackFunctionOnly</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAConst" class="extype" href="../nodes/WEAConst.html">WEAConst</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAConstructor" class="extype" href="../nodes/WEAConstructor.html">WEAConstructor</a>, <a name="kr.ac.kaist.jsaf.nodes.WEACreator" class="extype" href="../nodes/WEACreator.html">WEACreator</a>, <a name="kr.ac.kaist.jsaf.nodes.WEADeleter" class="extype" href="../nodes/WEADeleter.html">WEADeleter</a>, <a name="kr.ac.kaist.jsaf.nodes.WEADictionary" class="extype" href="../nodes/WEADictionary.html">WEADictionary</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAEllipsis" class="extype" href="../nodes/WEAEllipsis.html">WEAEllipsis</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAEnum" class="extype" href="../nodes/WEAEnum.html">WEAEnum</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAException" class="extype" href="../nodes/WEAException.html">WEAException</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAGetter" class="extype" href="../nodes/WEAGetter.html">WEAGetter</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAImplements" class="extype" href="../nodes/WEAImplements.html">WEAImplements</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAInherit" class="extype" href="../nodes/WEAInherit.html">WEAInherit</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAInterface" class="extype" href="../nodes/WEAInterface.html">WEAInterface</a>, <a name="kr.ac.kaist.jsaf.nodes.WEALegacycaller" class="extype" href="../nodes/WEALegacycaller.html">WEALegacycaller</a>, <a name="kr.ac.kaist.jsaf.nodes.WEANoInterfaceObject" class="extype" href="../nodes/WEANoInterfaceObject.html">WEANoInterfaceObject</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAOptional" class="extype" href="../nodes/WEAOptional.html">WEAOptional</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAPartial" class="extype" href="../nodes/WEAPartial.html">WEAPartial</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAQuestion" class="extype" href="../nodes/WEAQuestion.html">WEAQuestion</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAReadonly" class="extype" href="../nodes/WEAReadonly.html">WEAReadonly</a>, <a name="kr.ac.kaist.jsaf.nodes.WEASetter" class="extype" href="../nodes/WEASetter.html">WEASetter</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAStatic" class="extype" href="../nodes/WEAStatic.html">WEAStatic</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAString" class="extype" href="../nodes/WEAString.html">WEAString</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAStringifier" class="extype" href="../nodes/WEAStringifier.html">WEAStringifier</a>, <a name="kr.ac.kaist.jsaf.nodes.WEATypedef" class="extype" href="../nodes/WEATypedef.html">WEATypedef</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAUnrestricted" class="extype" href="../nodes/WEAUnrestricted.html">WEAUnrestricted</a>, <a name="kr.ac.kaist.jsaf.nodes.WEAttribute" class="extype" href="../nodes/WEAttribute.html">WEAttribute</a>, <a name="kr.ac.kaist.jsaf.nodes.WEnum" class="extype" href="../nodes/WEnum.html">WEnum</a>, <a name="kr.ac.kaist.jsaf.nodes.WException" class="extype" href="../nodes/WException.html">WException</a>, <a name="kr.ac.kaist.jsaf.nodes.WExceptionField" class="extype" href="../nodes/WExceptionField.html">WExceptionField</a>, <a name="kr.ac.kaist.jsaf.nodes.WFloat" class="extype" href="../nodes/WFloat.html">WFloat</a>, <a name="kr.ac.kaist.jsaf.nodes.WIDL" class="extype" href="../nodes/WIDL.html">WIDL</a>, <a name="kr.ac.kaist.jsaf.nodes.WIDLNodeInfo" class="extype" href="../nodes/WIDLNodeInfo.html">WIDLNodeInfo</a>, <a name="kr.ac.kaist.jsaf.nodes.WId" class="extype" href="../nodes/WId.html">WId</a>, <a name="kr.ac.kaist.jsaf.nodes.WImplementsStatement" class="extype" href="../nodes/WImplementsStatement.html">WImplementsStatement</a>, <a name="kr.ac.kaist.jsaf.nodes.WInteger" class="extype" href="../nodes/WInteger.html">WInteger</a>, <a name="kr.ac.kaist.jsaf.nodes.WInterface" class="extype" href="../nodes/WInterface.html">WInterface</a>, <a name="kr.ac.kaist.jsaf.nodes.WLiteral" class="extype" href="../nodes/WLiteral.html">WLiteral</a>, <a name="kr.ac.kaist.jsaf.nodes.WMember" class="extype" href="../nodes/WMember.html">WMember</a>, <a name="kr.ac.kaist.jsaf.nodes.WModule" class="extype" href="../nodes/WModule.html">WModule</a>, <a name="kr.ac.kaist.jsaf.nodes.WNamedType" class="extype" href="../nodes/WNamedType.html">WNamedType</a>, <a name="kr.ac.kaist.jsaf.nodes.WNull" class="extype" href="../nodes/WNull.html">WNull</a>, <a name="kr.ac.kaist.jsaf.nodes.WOperation" class="extype" href="../nodes/WOperation.html">WOperation</a>, <a name="kr.ac.kaist.jsaf.nodes.WQCreator" class="extype" href="../nodes/WQCreator.html">WQCreator</a>, <a name="kr.ac.kaist.jsaf.nodes.WQDeleter" class="extype" href="../nodes/WQDeleter.html">WQDeleter</a>, <a name="kr.ac.kaist.jsaf.nodes.WQGetter" class="extype" href="../nodes/WQGetter.html">WQGetter</a>, <a name="kr.ac.kaist.jsaf.nodes.WQId" class="extype" href="../nodes/WQId.html">WQId</a>, <a name="kr.ac.kaist.jsaf.nodes.WQLegacycaller" class="extype" href="../nodes/WQLegacycaller.html">WQLegacycaller</a>, <a name="kr.ac.kaist.jsaf.nodes.WQSetter" class="extype" href="../nodes/WQSetter.html">WQSetter</a>, <a name="kr.ac.kaist.jsaf.nodes.WQStatic" class="extype" href="../nodes/WQStatic.html">WQStatic</a>, <a name="kr.ac.kaist.jsaf.nodes.WQualifier" class="extype" href="../nodes/WQualifier.html">WQualifier</a>, <a name="kr.ac.kaist.jsaf.nodes.WSequenceType" class="extype" href="../nodes/WSequenceType.html">WSequenceType</a>, <a name="kr.ac.kaist.jsaf.nodes.WString" class="extype" href="../nodes/WString.html">WString</a>, <a name="kr.ac.kaist.jsaf.nodes.WTSArray" class="extype" href="../nodes/WTSArray.html">WTSArray</a>, <a name="kr.ac.kaist.jsaf.nodes.WTSQuestion" class="extype" href="../nodes/WTSQuestion.html">WTSQuestion</a>, <a name="kr.ac.kaist.jsaf.nodes.WType" class="extype" href="../nodes/WType.html">WType</a>, <a name="kr.ac.kaist.jsaf.nodes.WTypeSuffix" class="extype" href="../nodes/WTypeSuffix.html">WTypeSuffix</a>, <a name="kr.ac.kaist.jsaf.nodes.WTypedef" class="extype" href="../nodes/WTypedef.html">WTypedef</a>, <a name="kr.ac.kaist.jsaf.nodes.WUnionType" class="extype" href="../nodes/WUnionType.html">WUnionType</a>, <a name="kr.ac.kaist.jsaf.nodes.While" class="extype" href="../nodes/While.html">While</a>, <a name="kr.ac.kaist.jsaf.nodes.With" class="extype" href="../nodes/With.html">With</a></div>
+        </div></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="kr.ac.kaist.jsaf.nodes_util.UIDObject" class="in"><span>UIDObject</span></li><li name="kr.ac.kaist.jsaf.useful.HasAt" class="in"><span>HasAt</span></li><li name="java.io.Serializable" class="in"><span>Serializable</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#this" data-isabs="false">
+      <a id="this:UIDObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UIDObject</span><span class="params">()</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="prt" name="kr.ac.kaist.jsaf.useful.HasAt#FromString" data-isabs="false">
+      <a id="FromString:FromString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FromString</span><span class="result"> = <a name="kr.ac.kaist.jsaf.useful.HasAt.FromString" class="extype" href="../useful/HasAt$$FromString.html">FromString</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#at" data-isabs="false">
+      <a id="at():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">at</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes_util.UIDObject" class="extype" href="">UIDObject</a> → <a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a></dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#getUID" data-isabs="false">
+      <a id="getUID():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUID</span><span class="params">()</span><span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes_util.UIDObject" class="extype" href="">UIDObject</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#setUID" data-isabs="false">
+      <a id="setUID(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setUID</span><span class="params">(<span name="uid">uid: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#stringName" data-isabs="false">
+      <a id="stringName():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringName</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes_util.UIDObject" class="extype" href="">UIDObject</a> → <a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.nodes_util.UIDObject" class="extype" href="">UIDObject</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#toStringReadable" data-isabs="false">
+      <a id="toStringReadable():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toStringReadable</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.nodes_util.UIDObject#toStringVerbose" data-isabs="false">
+      <a id="toStringVerbose():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toStringVerbose</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div name="kr.ac.kaist.jsaf.useful.HasAt" class="parent">
+              <h3>Inherited from <a name="kr.ac.kaist.jsaf.useful.HasAt" class="extype" href="../useful/HasAt.html">HasAt</a></h3>
+            </div><div name="java.io.Serializable" class="parent">
+              <h3>Inherited from <span name="java.io.Serializable" class="extype">Serializable</span></h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

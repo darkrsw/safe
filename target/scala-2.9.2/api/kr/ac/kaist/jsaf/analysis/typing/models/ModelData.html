@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>kr.ac.kaist.jsaf.analysis.typing.models.ModelData</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+      <div id="definition">
+        <img src="../../../../../../../lib/trait_big.png" />
+        <p id="owner"><a name="kr" class="extype" href="../../../../../../package.html">kr</a>.<a name="kr.ac" class="extype" href="../../../../../package.html">ac</a>.<a name="kr.ac.kaist" class="extype" href="../../../../package.html">kaist</a>.<a name="kr.ac.kaist.jsaf" class="extype" href="../../../package.html">jsaf</a>.<a name="kr.ac.kaist.jsaf.analysis" class="extype" href="../../package.html">analysis</a>.<a name="kr.ac.kaist.jsaf.analysis.typing" class="extype" href="../package.html">typing</a>.<a name="kr.ac.kaist.jsaf.analysis.typing.models" class="extype" href="package.html">models</a></p>
+        <h1>ModelData</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ModelData</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinArray" class="extype" href="builtin/BuiltinArray$.html">BuiltinArray</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinBoolean" class="extype" href="builtin/BuiltinBoolean$.html">BuiltinBoolean</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinDate" class="extype" href="builtin/BuiltinDate$.html">BuiltinDate</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinError" class="extype" href="builtin/BuiltinError$.html">BuiltinError</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinFunction" class="extype" href="builtin/BuiltinFunction$.html">BuiltinFunction</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinGlobal" class="extype" href="builtin/BuiltinGlobal$.html">BuiltinGlobal</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinJSON" class="extype" href="builtin/BuiltinJSON$.html">BuiltinJSON</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinMath" class="extype" href="builtin/BuiltinMath$.html">BuiltinMath</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinNumber" class="extype" href="builtin/BuiltinNumber$.html">BuiltinNumber</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinObject" class="extype" href="builtin/BuiltinObject$.html">BuiltinObject</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinRegExp" class="extype" href="builtin/BuiltinRegExp$.html">BuiltinRegExp</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.builtin.BuiltinString" class="extype" href="builtin/BuiltinString$.html">BuiltinString</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.CSSStyleDeclaration" class="extype" href="DOMObject/CSSStyleDeclaration$.html">CSSStyleDeclaration</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.CSSStyleSheet" class="extype" href="DOMObject/CSSStyleSheet$.html">CSSStyleSheet</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.CanvasGradient" class="extype" href="DOMHtml5/CanvasGradient$.html">CanvasGradient</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.CanvasRenderingContext2D" class="extype" href="DOMHtml5/CanvasRenderingContext2D$.html">CanvasRenderingContext2D</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.ClientRect" class="extype" href="DOMObject/ClientRect$.html">ClientRect</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.ClientRectList" class="extype" href="DOMObject/ClientRectList$.html">ClientRectList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.Console" class="extype" href="DOMHtml5/Console$.html">Console</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOM" class="extype" href="DOM.html">DOM</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMAttr" class="extype" href="DOMCore/DOMAttr$.html">DOMAttr</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMCDATASection" class="extype" href="DOMCore/DOMCDATASection$.html">DOMCDATASection</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMCharacterData" class="extype" href="DOMCore/DOMCharacterData$.html">DOMCharacterData</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMComment" class="extype" href="DOMCore/DOMComment$.html">DOMComment</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMConfiguration" class="extype" href="DOMCore/DOMConfiguration$.html">DOMConfiguration</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMDocument" class="extype" href="DOMCore/DOMDocument$.html">DOMDocument</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMDocumentFragment" class="extype" href="DOMCore/DOMDocumentFragment$.html">DOMDocumentFragment</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMDocumentType" class="extype" href="DOMCore/DOMDocumentType$.html">DOMDocumentType</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMElement" class="extype" href="DOMCore/DOMElement$.html">DOMElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMEntity" class="extype" href="DOMCore/DOMEntity$.html">DOMEntity</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMEntityReference" class="extype" href="DOMCore/DOMEntityReference$.html">DOMEntityReference</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMError" class="extype" href="DOMCore/DOMError$.html">DOMError</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMException" class="extype" href="DOMCore/DOMException$.html">DOMException</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMImplementation" class="extype" href="DOMCore/DOMImplementation$.html">DOMImplementation</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMImplementationList" class="extype" href="DOMCore/DOMImplementationList$.html">DOMImplementationList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMImplementationRegistry" class="extype" href="DOMCore/DOMImplementationRegistry$.html">DOMImplementationRegistry</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMImplementationSource" class="extype" href="DOMCore/DOMImplementationSource$.html">DOMImplementationSource</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.DOMLocation" class="extype" href="DOMHtml5/DOMLocation$.html">DOMLocation</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMLocator" class="extype" href="DOMCore/DOMLocator$.html">DOMLocator</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMNameList" class="extype" href="DOMCore/DOMNameList$.html">DOMNameList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMNamedNodeMap" class="extype" href="DOMCore/DOMNamedNodeMap$.html">DOMNamedNodeMap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMNode" class="extype" href="DOMCore/DOMNode$.html">DOMNode</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMNodeList" class="extype" href="DOMCore/DOMNodeList$.html">DOMNodeList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMNotation" class="extype" href="DOMCore/DOMNotation$.html">DOMNotation</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMProcessingInstruction" class="extype" href="DOMCore/DOMProcessingInstruction$.html">DOMProcessingInstruction</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMStringList" class="extype" href="DOMCore/DOMStringList$.html">DOMStringList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMText" class="extype" href="DOMCore/DOMText$.html">DOMText</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMTypeInfo" class="extype" href="DOMCore/DOMTypeInfo$.html">DOMTypeInfo</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMCore.DOMUserDataHandler" class="extype" href="DOMCore/DOMUserDataHandler$.html">DOMUserDataHandler</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMWindow" class="extype" href="DOMWindow$.html">DOMWindow</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.DocumentEvent" class="extype" href="DOMEvent/DocumentEvent$.html">DocumentEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.Event" class="extype" href="DOMEvent/Event$.html">Event</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.EventException" class="extype" href="DOMEvent/EventException$.html">EventException</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.EventListener" class="extype" href="DOMEvent/EventListener$.html">EventListener</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.EventTarget" class="extype" href="DOMEvent/EventTarget$.html">EventTarget</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.HTMLAllCollection" class="extype" href="DOMObject/HTMLAllCollection$.html">HTMLAllCollection</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLAnchorElement" class="extype" href="DOMHtml/HTMLAnchorElement$.html">HTMLAnchorElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLAppletElement" class="extype" href="DOMHtml/HTMLAppletElement$.html">HTMLAppletElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLAreaElement" class="extype" href="DOMHtml/HTMLAreaElement$.html">HTMLAreaElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLBRElement" class="extype" href="DOMHtml/HTMLBRElement$.html">HTMLBRElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLBaseElement" class="extype" href="DOMHtml/HTMLBaseElement$.html">HTMLBaseElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLBaseFontElement" class="extype" href="DOMHtml/HTMLBaseFontElement$.html">HTMLBaseFontElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLBodyElement" class="extype" href="DOMHtml/HTMLBodyElement$.html">HTMLBodyElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLButtonElement" class="extype" href="DOMHtml/HTMLButtonElement$.html">HTMLButtonElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.HTMLCanvasElement" class="extype" href="DOMHtml5/HTMLCanvasElement$.html">HTMLCanvasElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLCollection" class="extype" href="DOMHtml/HTMLCollection$.html">HTMLCollection</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLDListElement" class="extype" href="DOMHtml/HTMLDListElement$.html">HTMLDListElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.HTMLDataListElement" class="extype" href="DOMHtml5/HTMLDataListElement$.html">HTMLDataListElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLDirectoryElement" class="extype" href="DOMHtml/HTMLDirectoryElement$.html">HTMLDirectoryElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLDivElement" class="extype" href="DOMHtml/HTMLDivElement$.html">HTMLDivElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLDocument" class="extype" href="DOMHtml/HTMLDocument$.html">HTMLDocument</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLElement" class="extype" href="DOMHtml/HTMLElement$.html">HTMLElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLFieldSetElement" class="extype" href="DOMHtml/HTMLFieldSetElement$.html">HTMLFieldSetElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLFontElement" class="extype" href="DOMHtml/HTMLFontElement$.html">HTMLFontElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLFormElement" class="extype" href="DOMHtml/HTMLFormElement$.html">HTMLFormElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLFrameElement" class="extype" href="DOMHtml/HTMLFrameElement$.html">HTMLFrameElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLFrameSetElement" class="extype" href="DOMHtml/HTMLFrameSetElement$.html">HTMLFrameSetElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLHRElement" class="extype" href="DOMHtml/HTMLHRElement$.html">HTMLHRElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLHeadElement" class="extype" href="DOMHtml/HTMLHeadElement$.html">HTMLHeadElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLHeadingElement" class="extype" href="DOMHtml/HTMLHeadingElement$.html">HTMLHeadingElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLHtmlElement" class="extype" href="DOMHtml/HTMLHtmlElement$.html">HTMLHtmlElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLIFrameElement" class="extype" href="DOMHtml/HTMLIFrameElement$.html">HTMLIFrameElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLImageElement" class="extype" href="DOMHtml/HTMLImageElement$.html">HTMLImageElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLInputElement" class="extype" href="DOMHtml/HTMLInputElement$.html">HTMLInputElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLIsIndexElement" class="extype" href="DOMHtml/HTMLIsIndexElement$.html">HTMLIsIndexElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLLIElement" class="extype" href="DOMHtml/HTMLLIElement$.html">HTMLLIElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLLabelElement" class="extype" href="DOMHtml/HTMLLabelElement$.html">HTMLLabelElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLLegendElement" class="extype" href="DOMHtml/HTMLLegendElement$.html">HTMLLegendElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLLinkElement" class="extype" href="DOMHtml/HTMLLinkElement$.html">HTMLLinkElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLMapElement" class="extype" href="DOMHtml/HTMLMapElement$.html">HTMLMapElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLMenuElement" class="extype" href="DOMHtml/HTMLMenuElement$.html">HTMLMenuElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLMetaElement" class="extype" href="DOMHtml/HTMLMetaElement$.html">HTMLMetaElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLModElement" class="extype" href="DOMHtml/HTMLModElement$.html">HTMLModElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLOListElement" class="extype" href="DOMHtml/HTMLOListElement$.html">HTMLOListElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLObjectElement" class="extype" href="DOMHtml/HTMLObjectElement$.html">HTMLObjectElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLOptGroupElement" class="extype" href="DOMHtml/HTMLOptGroupElement$.html">HTMLOptGroupElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLOptionCollection" class="extype" href="DOMHtml/HTMLOptionCollection$.html">HTMLOptionCollection</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLOptionElement" class="extype" href="DOMHtml/HTMLOptionElement$.html">HTMLOptionElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLOptionsCollection" class="extype" href="DOMHtml/HTMLOptionsCollection$.html">HTMLOptionsCollection</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLParagraphElement" class="extype" href="DOMHtml/HTMLParagraphElement$.html">HTMLParagraphElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLParamElement" class="extype" href="DOMHtml/HTMLParamElement$.html">HTMLParamElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLPreElement" class="extype" href="DOMHtml/HTMLPreElement$.html">HTMLPreElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLQuoteElement" class="extype" href="DOMHtml/HTMLQuoteElement$.html">HTMLQuoteElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLScriptElement" class="extype" href="DOMHtml/HTMLScriptElement$.html">HTMLScriptElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLSelectElement" class="extype" href="DOMHtml/HTMLSelectElement$.html">HTMLSelectElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLStyleElement" class="extype" href="DOMHtml/HTMLStyleElement$.html">HTMLStyleElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableCaptionElement" class="extype" href="DOMHtml/HTMLTableCaptionElement$.html">HTMLTableCaptionElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableCellElement" class="extype" href="DOMHtml/HTMLTableCellElement$.html">HTMLTableCellElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableColElement" class="extype" href="DOMHtml/HTMLTableColElement$.html">HTMLTableColElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableElement" class="extype" href="DOMHtml/HTMLTableElement$.html">HTMLTableElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableRowElement" class="extype" href="DOMHtml/HTMLTableRowElement$.html">HTMLTableRowElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTableSectionElement" class="extype" href="DOMHtml/HTMLTableSectionElement$.html">HTMLTableSectionElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTextAreaElement" class="extype" href="DOMHtml/HTMLTextAreaElement$.html">HTMLTextAreaElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTitleElement" class="extype" href="DOMHtml/HTMLTitleElement$.html">HTMLTitleElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLTopElement" class="extype" href="DOMHtml/HTMLTopElement$.html">HTMLTopElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml.HTMLUListElement" class="extype" href="DOMHtml/HTMLUListElement$.html">HTMLUListElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.HTMLUnknownElement" class="extype" href="DOMHtml5/HTMLUnknownElement$.html">HTMLUnknownElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.History" class="extype" href="DOMHtml5/History$.html">History</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQuery" class="extype" href="jquery/JQuery$.html">JQuery</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryAjax" class="extype" href="jquery/JQueryAjax$.html">JQueryAjax</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryAttribute" class="extype" href="jquery/JQueryAttribute$.html">JQueryAttribute</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryCSS" class="extype" href="jquery/JQueryCSS$.html">JQueryCSS</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryCallback" class="extype" href="jquery/JQueryCallback$.html">JQueryCallback</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryCore" class="extype" href="jquery/JQueryCore$.html">JQueryCore</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryData" class="extype" href="jquery/JQueryData$.html">JQueryData</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryDeferred" class="extype" href="jquery/JQueryDeferred$.html">JQueryDeferred</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryEffect" class="extype" href="jquery/JQueryEffect$.html">JQueryEffect</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryEvent" class="extype" href="jquery/JQueryEvent$.html">JQueryEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryInternal" class="extype" href="jquery/JQueryInternal$.html">JQueryInternal</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryManipulation" class="extype" href="jquery/JQueryManipulation$.html">JQueryManipulation</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryMiscsllaneous" class="extype" href="jquery/JQueryMiscsllaneous$.html">JQueryMiscsllaneous</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryProperty" class="extype" href="jquery/JQueryProperty$.html">JQueryProperty</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryTraversing" class="extype" href="jquery/JQueryTraversing$.html">JQueryTraversing</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.jquery.JQueryUtility" class="extype" href="jquery/JQueryUtility$.html">JQueryUtility</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.KeyboardEvent" class="extype" href="DOMEvent/KeyboardEvent$.html">KeyboardEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.MessageEvent" class="extype" href="DOMEvent/MessageEvent$.html">MessageEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.MimeType" class="extype" href="DOMHtml5/MimeType$.html">MimeType</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.MimeTypeArray" class="extype" href="DOMHtml5/MimeTypeArray$.html">MimeTypeArray</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.MouseEvent" class="extype" href="DOMEvent/MouseEvent$.html">MouseEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.MutationEvent" class="extype" href="DOMEvent/MutationEvent$.html">MutationEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.Navigator" class="extype" href="DOMHtml5/Navigator$.html">Navigator</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.Plugin" class="extype" href="DOMHtml5/Plugin$.html">Plugin</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.PluginArray" class="extype" href="DOMHtml5/PluginArray$.html">PluginArray</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMSvg.SVGElement" class="extype" href="DOMSvg/SVGElement$.html">SVGElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMSvg.SVGSVGElement" class="extype" href="DOMSvg/SVGSVGElement$.html">SVGSVGElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMSvg.SVGTopElement" class="extype" href="DOMSvg/SVGTopElement$.html">SVGTopElement</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.Screen" class="extype" href="DOMObject/Screen$.html">Screen</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMHtml5.Storage" class="extype" href="DOMHtml5/Storage$.html">Storage</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.StyleSheet" class="extype" href="DOMObject/StyleSheet$.html">StyleSheet</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.StyleSheetList" class="extype" href="DOMObject/StyleSheetList$.html">StyleSheetList</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.TouchEvent" class="extype" href="DOMEvent/TouchEvent$.html">TouchEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMEvent.UIEvent" class="extype" href="DOMEvent/UIEvent$.html">UIEvent</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.models.DOMObject.XMLHttpRequest" class="extype" href="DOMObject/XMLHttpRequest$.html">XMLHttpRequest</a></div>
+        </div></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData" class="in"><span>ModelData</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div class="values members" id="values">
+              <h3>Abstract Value Members</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getDefMap" data-isabs="true">
+      <a id="getDefMap():Map[String, (Heap, Context, CFG, String, CFGExpr, FunctionId) ⇒ LPSet]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDefMap</span><span class="params">()</span><span class="result">: Map[String, (<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFG" class="extype" href="../../cfg/CFG.html">CFG</a>, String, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a>, FunctionId) ⇒ <a name="kr.ac.kaist.jsaf.analysis.typing.domain.LPSet" class="extype" href="../domain/LPSet.html">LPSet</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getInitList" data-isabs="true">
+      <a id="getInitList():List[(Loc, List[(String, AbsProperty)])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInitList</span><span class="params">()</span><span class="result">: List[(Loc, List[(String, <a name="kr.ac.kaist.jsaf.analysis.typing.models.AbsProperty" class="extype" href="AbsProperty.html">AbsProperty</a>)])]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getPreSemanticMap" data-isabs="true">
+      <a id="getPreSemanticMap():Map[String, (Semantics, Heap, Context, Heap, Context, ((FunctionId, Label), CallContext), CFG, String, CFGExpr) ⇒ ((Heap, Context), (Heap, Context))]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPreSemanticMap</span><span class="params">()</span><span class="result">: Map[String, (<a name="kr.ac.kaist.jsaf.analysis.typing.Semantics" class="extype" href="../Semantics.html">Semantics</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, ((FunctionId, <a name="kr.ac.kaist.jsaf.analysis.cfg.Label" class="extype" href="../../cfg/Label.html">Label</a>), <a name="kr.ac.kaist.jsaf.analysis.typing.CallContext" class="extype" href="../CallContext.html">CallContext</a>), <a name="kr.ac.kaist.jsaf.analysis.cfg.CFG" class="extype" href="../../cfg/CFG.html">CFG</a>, String, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a>) ⇒ ((<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>), (<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>))]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getSemanticMap" data-isabs="true">
+      <a id="getSemanticMap():Map[String, (Semantics, Heap, Context, Heap, Context, ((FunctionId, Label), CallContext), CFG, String, CFGExpr) ⇒ ((Heap, Context), (Heap, Context))]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSemanticMap</span><span class="params">()</span><span class="result">: Map[String, (<a name="kr.ac.kaist.jsaf.analysis.typing.Semantics" class="extype" href="../Semantics.html">Semantics</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, ((FunctionId, <a name="kr.ac.kaist.jsaf.analysis.cfg.Label" class="extype" href="../../cfg/Label.html">Label</a>), <a name="kr.ac.kaist.jsaf.analysis.typing.CallContext" class="extype" href="../CallContext.html">CallContext</a>), <a name="kr.ac.kaist.jsaf.analysis.cfg.CFG" class="extype" href="../../cfg/CFG.html">CFG</a>, String, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a>) ⇒ ((<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>), (<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>))]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getUseMap" data-isabs="true">
+      <a id="getUseMap():Map[String, (Heap, Context, CFG, String, CFGExpr, FunctionId) ⇒ LPSet]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUseMap</span><span class="params">()</span><span class="result">: Map[String, (<a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a>, <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a>, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFG" class="extype" href="../../cfg/CFG.html">CFG</a>, String, <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a>, FunctionId) ⇒ <a name="kr.ac.kaist.jsaf.analysis.typing.domain.LPSet" class="extype" href="../domain/LPSet.html">LPSet</a>]</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Concrete Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#dummyInfo" data-isabs="false">
+      <a id="dummyInfo:IRSpanInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dummyInfo</span><span class="result">: <a name="kr.ac.kaist.jsaf.nodes.IRSpanInfo" class="extype" href="../../../nodes/IRSpanInfo.html">IRSpanInfo</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getAddrList_use" data-isabs="false">
+      <a id="getAddrList_use():LPSet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAddrList_use</span><span class="params">()</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.LPSet" class="extype" href="../domain/LPSet.html">LPSet</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValue" data-isabs="false">
+      <a id="getArgValue(Heap,Context,CFGExpr,String):Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValue</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="x">x: String</span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Value" class="extype" href="../domain/Value.html">Value</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValueAbs" data-isabs="false">
+      <a id="getArgValueAbs(Heap,Context,CFGExpr,AbsString):Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValueAbs</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="s">s: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.AbsString" class="extype" href="../domain/AbsString.html">AbsString</a></span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Value" class="extype" href="../domain/Value.html">Value</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValueAbs_pre" data-isabs="false">
+      <a id="getArgValueAbs_pre(Heap,Context,CFGExpr,AbsString,Loc):Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValueAbs_pre</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="s">s: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.AbsString" class="extype" href="../domain/AbsString.html">AbsString</a></span>, <span name="PureLocalLoc">PureLocalLoc: Loc</span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Value" class="extype" href="../domain/Value.html">Value</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValueAbs_use" data-isabs="false">
+      <a id="getArgValueAbs_use(Heap,Context,CFGExpr,AbsString):LPSet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValueAbs_use</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="s">s: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.AbsString" class="extype" href="../domain/AbsString.html">AbsString</a></span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.LPSet" class="extype" href="../domain/LPSet.html">LPSet</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValue_pre" data-isabs="false">
+      <a id="getArgValue_pre(Heap,Context,CFGExpr,String,Loc):Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValue_pre</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="x">x: String</span>, <span name="PureLocalLoc">PureLocalLoc: Loc</span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Value" class="extype" href="../domain/Value.html">Value</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="kr.ac.kaist.jsaf.analysis.typing.models.ModelData#getArgValue_use" data-isabs="false">
+      <a id="getArgValue_use(Heap,Context,CFGExpr,String):LPSet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgValue_use</span><span class="params">(<span name="h">h: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Heap" class="extype" href="../domain/Heap.html">Heap</a></span>, <span name="ctx">ctx: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.Context" class="extype" href="../domain/Context.html">Context</a></span>, <span name="args">args: <a name="kr.ac.kaist.jsaf.analysis.cfg.CFGExpr" class="extype" href="../../cfg/CFGExpr.html">CFGExpr</a></span>, <span name="x">x: String</span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.analysis.typing.domain.LPSet" class="extype" href="../domain/LPSet.html">LPSet</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

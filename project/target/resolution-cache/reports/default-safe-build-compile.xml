@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="safe-build"
+		revision="0.1-SNAPSHOT"
+		extra-sbtVersion="0.13"
+		extra-scalaVersion="2.10"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20161022163958"/>
+	<dependencies>
+		<module organisation="de.johoop" name="ant4sbt">
+			<revision name="1.1.2" status="release" pubdate="20131020110309" resolver="sbt-chain" artresolver="sbt-chain" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
+				<metadata-artifact status="no" details="" size="1488" time="0" location="/Users/darkrsw/.ivy2/cache/scala_2.10/sbt_0.13/de.johoop/ant4sbt/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/de.johoop/ant4sbt/scala_2.10/sbt_0.13/1.1.2/ivys/ivy.xml"/>
+				<caller organisation="default" name="safe-build" conf="compile" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.13" extra-scalaVersion="2.10"/>
+				<artifacts>
+					<artifact name="ant4sbt" type="jar" ext="jar" status="no" details="" size="100095" time="0" location="/Users/darkrsw/.ivy2/cache/scala_2.10/sbt_0.13/de.johoop/ant4sbt/jars/ant4sbt-1.1.2.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/de.johoop/ant4sbt/scala_2.10/sbt_0.13/1.1.2/jars/ant4sbt.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.9.2" status="release" pubdate="20130708204817" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3112" time="0" location="/Users/darkrsw/.ivy2/cache/org.apache.ant/ant/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.2/ant-1.9.2.pom"/>
+				<caller organisation="de.johoop" name="ant4sbt" conf="compile" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="1.1.2"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="2000557" time="0" location="/Users/darkrsw/.ivy2/cache/org.apache.ant/ant/jars/ant-1.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.2/ant-1.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.9.2" status="release" pubdate="20130708205507" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2789" time="0" location="/Users/darkrsw/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.2/ant-launcher-1.9.2.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="default, compile, runtime, master" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="1.9.2"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="18333" time="0" location="/Users/darkrsw/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.2/ant-launcher-1.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>kr.ac.kaist.jsaf.interpreter</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a name="kr" class="extype" href="../../../../package.html">kr</a>.<a name="kr.ac" class="extype" href="../../../package.html">ac</a>.<a name="kr.ac.kaist" class="extype" href="../../package.html">kaist</a>.<a name="kr.ac.kaist.jsaf" class="extype" href="../package.html">jsaf</a></p>
+        <h1>interpreter</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interpreter</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.BindingValue" data-isabs="true">
+      <a id="BindingValue:BindingValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$BindingValue.html"><span class="name">BindingValue</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.Completion" data-isabs="false">
+      <a id="Completion:Completion"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Completion.html"><span class="name">Completion</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ConsEnv" data-isabs="false">
+      <a id="ConsEnv:ConsEnv"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ConsEnv.html"><span class="name">ConsEnv</span></a><span class="params">(<span name="first">first: EnvRec</span>, <span name="rest">rest: Env</span>)</span><span class="result"> extends Env with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.DeclEnvRec" data-isabs="false">
+      <a id="DeclEnvRec:DeclEnvRec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$DeclEnvRec.html"><span class="name">DeclEnvRec</span></a><span class="params">(<span name="s">s: Store</span>)</span><span class="result"> extends EnvRec with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.DefaultValueError" data-isabs="false">
+      <a id="DefaultValueError:DefaultValueError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$DefaultValueError.html"><span class="name">DefaultValueError</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.EmptyEnv" data-isabs="false">
+      <a id="EmptyEnv:EmptyEnv"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$EmptyEnv.html"><span class="name">EmptyEnv</span></a><span class="params">()</span><span class="result"> extends Env with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.Env" data-isabs="true">
+      <a id="Env:Env"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Env.html"><span class="name">Env</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.EnvRec" data-isabs="true">
+      <a id="EnvRec:EnvRec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$EnvRec.html"><span class="name">EnvRec</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.Error" data-isabs="false">
+      <a id="Error:Error"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Error.html"><span class="name">Error</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ErrorException" data-isabs="false">
+      <a id="ErrorException:ErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ErrorException.html"><span class="name">ErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.EvalError" data-isabs="false">
+      <a id="EvalError:EvalError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$EvalError.html"><span class="name">EvalError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.EvalErrorException" data-isabs="false">
+      <a id="EvalErrorException:EvalErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$EvalErrorException.html"><span class="name">EvalErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.Interpreter" data-isabs="false">
+      <a id="Interpreter:Interpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Interpreter.html"><span class="name">Interpreter</span></a><span class="result"> extends IRWalker</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.InterpreterError" data-isabs="false">
+      <a id="InterpreterError:InterpreterError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$InterpreterError.html"><span class="name">InterpreterError</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.InterpreterHelper" data-isabs="false">
+      <a id="InterpreterHelper:InterpreterHelper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InterpreterHelper.html"><span class="name">InterpreterHelper</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.InterpreterState" data-isabs="false">
+      <a id="InterpreterState:InterpreterState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InterpreterState.html"><span class="name">InterpreterState</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.JSError" data-isabs="true">
+      <a id="JSError:JSError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$JSError.html"><span class="name">JSError</span></a><span class="result"> extends ValError</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.NYIError" data-isabs="false">
+      <a id="NYIError:NYIError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$NYIError.html"><span class="name">NYIError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.NYIErrorException" data-isabs="false">
+      <a id="NYIErrorException:NYIErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$NYIErrorException.html"><span class="name">NYIErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ObjEnvRec" data-isabs="false">
+      <a id="ObjEnvRec:ObjEnvRec"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ObjEnvRec.html"><span class="name">ObjEnvRec</span></a><span class="params">(<span name="o">o: JSObject</span>)</span><span class="result"> extends EnvRec with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ObjectProp" data-isabs="false">
+      <a id="ObjectProp:ObjectProp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ObjectProp.html"><span class="name">ObjectProp</span></a><span class="result"> extends BindingValue</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#PName" data-isabs="false">
+      <a id="PName:PName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PName</span><span class="result"> = <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.PVal" data-isabs="false">
+      <a id="PVal:PVal"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$PVal.html"><span class="name">PVal</span></a><span class="params">(<span name="v">v: IRPVal</span>)</span><span class="result"> extends Val with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.PropTable" data-isabs="false">
+      <a id="PropTable:PropTable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$PropTable.html"><span class="name">PropTable</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.RangeError" data-isabs="false">
+      <a id="RangeError:RangeError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$RangeError.html"><span class="name">RangeError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.RangeErrorException" data-isabs="false">
+      <a id="RangeErrorException:RangeErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$RangeErrorException.html"><span class="name">RangeErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ReferenceError" data-isabs="false">
+      <a id="ReferenceError:ReferenceError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReferenceError.html"><span class="name">ReferenceError</span></a><span class="params">(<span name="x">x: Var</span>)</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ReferenceErrorException" data-isabs="false">
+      <a id="ReferenceErrorException:ReferenceErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReferenceErrorException.html"><span class="name">ReferenceErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#Store" data-isabs="false">
+      <a id="Store:Store"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Store</span><span class="result"> = <span name="java.util.HashMap" class="extype">HashMap</span>[Var, <a name="kr.ac.kaist.jsaf.interpreter.package.StoreValue" class="extype" href="package$$StoreValue.html">StoreValue</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.StoreValue" data-isabs="false">
+      <a id="StoreValue:StoreValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$StoreValue.html"><span class="name">StoreValue</span></a><span class="result"> extends BindingValue</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.SyntaxError" data-isabs="false">
+      <a id="SyntaxError:SyntaxError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$SyntaxError.html"><span class="name">SyntaxError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.SyntaxErrorException" data-isabs="false">
+      <a id="SyntaxErrorException:SyntaxErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$SyntaxErrorException.html"><span class="name">SyntaxErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ThrowException" data-isabs="false">
+      <a id="ThrowException:ThrowException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ThrowException.html"><span class="name">ThrowException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.TypeError" data-isabs="false">
+      <a id="TypeError:TypeError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$TypeError.html"><span class="name">TypeError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.TypeErrorException" data-isabs="false">
+      <a id="TypeErrorException:TypeErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$TypeErrorException.html"><span class="name">TypeErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.URIError" data-isabs="false">
+      <a id="URIError:URIError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$URIError.html"><span class="name">URIError</span></a><span class="params">()</span><span class="result"> extends JSError with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.URIErrorException" data-isabs="false">
+      <a id="URIErrorException:URIErrorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$URIErrorException.html"><span class="name">URIErrorException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.Val" data-isabs="true">
+      <a id="Val:Val"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$Val.html"><span class="name">Val</span></a><span class="result"> extends ValError</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package.ValError" data-isabs="true">
+      <a id="ValError:ValError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ValError.html"><span class="name">ValError</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#Var" data-isabs="false">
+      <a id="Var:Var"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Var</span><span class="result"> = <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.InterpreterDebug" data-isabs="false">
+      <a id="InterpreterDebug:InterpreterDebug"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InterpreterDebug$.html"><span class="name">InterpreterDebug</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.InterpreterPredefine" data-isabs="false">
+      <a id="InterpreterPredefine:InterpreterPredefine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InterpreterPredefine$.html"><span class="name">InterpreterPredefine</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#cov_debug" data-isabs="false">
+      <a id="cov_debug:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cov_debug</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#debug" data-isabs="false">
+      <a id="debug:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#exnLoc" data-isabs="false">
+      <a id="exnLoc(Interpreter,ValError):Val"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exnLoc</span><span class="params">(<span name="I">I: <a name="kr.ac.kaist.jsaf.interpreter.Interpreter" class="extype" href="Interpreter.html">Interpreter</a></span>, <span name="ve">ve: <a name="kr.ac.kaist.jsaf.interpreter.package.ValError" class="extype" href="package$$ValError.html">ValError</a></span>)</span><span class="result">: <a name="kr.ac.kaist.jsaf.interpreter.package.Val" class="extype" href="package$$Val.html">Val</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.objects" data-isabs="false">
+      <a id="objects:objects"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="objects/package.html"><span class="name">objects</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="kr.ac.kaist.jsaf.interpreter.package#propTable" data-isabs="false">
+      <a id="propTable():PropTable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propTable</span><span class="params">()</span><span class="result">: <a name="kr.ac.kaist.jsaf.interpreter.package.PropTable" class="extype" href="package$$PropTable.html">PropTable</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="kr.ac.kaist.jsaf.interpreter.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
