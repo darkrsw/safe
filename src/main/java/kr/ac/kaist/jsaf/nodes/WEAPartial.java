@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class WEAPartial, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Sun Oct 23 13:58:53 CEST 2016
+ * @version  Generated automatically by ASTGen at Sun Oct 23 18:58:01 CEST 2016
  */
 @SuppressWarnings("unused")
 public class WEAPartial extends WEAttribute {

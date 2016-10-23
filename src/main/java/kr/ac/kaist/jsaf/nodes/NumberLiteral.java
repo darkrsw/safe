@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class NumberLiteral, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Sun Oct 23 13:58:52 CEST 2016
+ * @version  Generated automatically by ASTGen at Sun Oct 23 18:58:00 CEST 2016
  */
 @SuppressWarnings("unused")
 public abstract class NumberLiteral extends Literal {

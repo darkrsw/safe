@@ -28,3 +28,13 @@ exit
 antRun clean compile
 compile
 exit
+antRun clean compile
+compile
+exit
+antRun clean compile
+compile
+antRun clean compile
+compile
+exit
+compile
+exit
