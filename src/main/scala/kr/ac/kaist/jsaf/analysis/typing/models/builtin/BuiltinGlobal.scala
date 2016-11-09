@@ -23,7 +23,8 @@ import kr.ac.kaist.jsaf.utils.uri.URIHandling
 
 object BuiltinGlobal extends ModelData {
   val quiet =
-    if(Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR)
+    //if(Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR)
+    if(Config.quietMode)
       true
     else false
 
@@ -92,7 +93,7 @@ object BuiltinGlobal extends ModelData {
                 case _ => "OtherStr"
               }
             }
-            if (!quiet) System.out.println("* Warning : the argument of 'Global.eval' is in the below ...")           
+            if (!quiet) System.out.println("* Warning : the argument of 'Global.eval' is in the below ...")
             if (!quiet) System.out.println(message)
             // unsound
             ((h, ctx), (he, ctxe))

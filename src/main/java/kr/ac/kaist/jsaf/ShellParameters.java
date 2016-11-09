@@ -468,6 +468,7 @@ public class ShellParameters
         {
             command = CMD_BUG_DETECTOR;
             feasibleOptions.add("-dev");
+            feasibleOptions.add("-timeout");
             feasibleOptions.add("-erroronly");
             feasibleOptions.add("-locclone");
             feasibleOptions.add("-pretty");

@@ -1405,12 +1405,12 @@ object Helper {
     })
   }
   
-  private val locclone = Shell.params.opt_LocClone
+  private var locclone = Shell.params.opt_LocClone
   // for Address refinement
   private var ccCount = 0
   private var callContextMap: Map[CallContext, Int] = Map[CallContext, Int]()
-  private val maxProgramAddr = newProgramAddr() 
-  private val shift = if(locclone) (() => {
+  private var maxProgramAddr = newProgramAddr()
+  private var shift = if(locclone) (() => {
     var maxAddr = maxProgramAddr 
     var retShift = 0
     while (maxAddr > 0) {
@@ -1422,7 +1422,26 @@ object Helper {
     retShift + 1
   })() else 0
 
+  def init(): Unit =
+  {
+    locclone = Shell.params.opt_LocClone
 
+    // for Address refinement
+    ccCount = 0
+    callContextMap = Map[CallContext, Int]()
+    maxProgramAddr = newProgramAddr()
+    shift = if(locclone) (() => {
+      var maxAddr = maxProgramAddr
+      var retShift = 0
+      while (maxAddr > 0) {
+        maxAddr = maxAddr >> 1
+        retShift = retShift + 1
+      }
+      // Set Mask value in domain/package.
+      setMaskValue(retShift + 1)
+      retShift + 1
+    })() else 0
+  }
 
   def extendAddr(addr: Int, n: Int): Int = addr | (n << shift)
  

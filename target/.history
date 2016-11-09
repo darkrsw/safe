@@ -38,3 +38,28 @@ compile
 exit
 compile
 exit
+antRun clean comile
+antRun clean compile
+compile
+exit
+antRun clean compile
+compile
+clean
+exit
+antRun clean compile
+compile
+antRun clean compile
+compile
+compiel
+compile
+exit
+antRun clean compile
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+ls
+exit

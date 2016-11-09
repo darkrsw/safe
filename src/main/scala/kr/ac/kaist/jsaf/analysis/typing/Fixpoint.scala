@@ -16,6 +16,7 @@ import kr.ac.kaist.jsaf.analysis.typing.debug.DebugConsole
 import kr.ac.kaist.jsaf.Shell
 import kr.ac.kaist.jsaf.scala_src.useful.WorkTrait
 import kr.ac.kaist.jsaf.analysis.typing.AddressManager._
+import kr.ac.kaist.jsaf.shell.AnalyzeMain
 
 class Fixpoint(cfg: CFG, worklist: Worklist, inTable: Table, quiet: Boolean, locclone: Boolean) {
   private val sem = new Semantics(cfg, worklist, locclone)
@@ -89,7 +90,10 @@ class Fixpoint(cfg: CFG, worklist: Worklist, inTable: Table, quiet: Boolean, loc
       System.out.println("*** Max location count(" + Shell.params.opt_MaxLocCount + ") is exceeded!")
       System.out.println("  " + locCountExceededMessage)
     }
-    if(isTimeout) System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+    if(isTimeout) {
+      System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+      AnalyzeMain.isTimeout = true
+    }
 
     if (Shell.params.opt_ExitDump) {
       System.out.println("** Dump Exit Heap **\n=========================================================================")

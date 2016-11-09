@@ -4,7 +4,7 @@
 		module="safe-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20161022163958"
+		publication="20161108182452"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>

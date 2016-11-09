@@ -37,6 +37,10 @@ import kr.ac.kaist.jsaf.analysis.typing.domain.DomainPrinter
 //   - BugDetector
 ////////////////////////////////////////////////////////////////////////////////
 object AnalyzeMain {
+
+  // Only for experiment
+  var isTimeout = false
+
   /**
    * Analyze a JavaScript file. (Work in progress)
    */

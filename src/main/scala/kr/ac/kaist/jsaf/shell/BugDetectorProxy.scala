@@ -13,9 +13,12 @@ import kr.ac.kaist.jsaf.scala_src.useful.Lists._
 import edu.rice.cs.plt.tuple.{Option => JOption}
 import kr.ac.kaist.jsaf.useful.{MemoryMeasurer, Pair, Useful}
 import kr.ac.kaist.jsaf.analysis.cfg.CFGBuilder
+import kr.ac.kaist.jsaf.analysis.lib.HeapTreeMap
 import kr.ac.kaist.jsaf.nodes_util.{DOMStatistics, JSFromHTML, NodeRelation, NodeUtil}
 import kr.ac.kaist.jsaf.analysis.typing.models.DOMBuilder
-import kr.ac.kaist.jsaf.bug_detector.{BugDetector, BugEntry2, StrictModeChecker}
+import kr.ac.kaist.jsaf.bug_detector.{BugDetector, BugEntry2, BugList2, StrictModeChecker}
+import kr.ac.kaist.jsaf.analysis.typing.Helper
+import kr.ac.kaist.jsaf.analysis.typing.domain._
 
 import scala.collection.JavaConversions
 
@@ -24,18 +27,30 @@ import scala.collection.JavaConversions
   */
 object BugDetectorProxy
 {
-  def detectJSBugs(inFile: File): Unit = {
+  // default 5min
+  var timeout = 60 * 2
+
+  def detectJSBugs(inFile: File): BugList2 = {
     val quiet = true
-    val tokens = Array[String]("bug-detector", "-dev", inFile.getCanonicalPath)
+    val option1 = Array[String]("bug-detector", "-dev")
+    val timeout_opt = if (timeout > 0) {
+      Array[String]("-timeout", timeout.toString)
+    } else {
+      Array[String]()
+    }
+    val tokens = option1 ++ timeout_opt ++ Array[String](inFile.getCanonicalPath)
+
     Shell.params = new ShellParameters()
     val errorMessage = Shell.params.Set(tokens)
     val pred = new Predefined(Shell.params)
 
     Config.setQuietMode
 
-    var locclone = Shell.params.opt_LocClone
+    val locclone = Shell.params.opt_LocClone
 
     AddressManager.reset()
+
+
     val fileName: String = Shell.params.FileNames(0)
     val fileNames = JavaConversions.seqAsJavaList(Shell.params.FileNames)
     Config.setFileName(fileName)
@@ -154,12 +169,32 @@ object BugDetectorProxy
     val bugStorage = detector.detectBug2
     val bugList = bugStorage.getBugList()
 
-    bugList.foreach( x => println(stringfy(x)) )
+    //bugList.foreach( x => println(stringfy(x)) )
+    println("Total #bugs: " + bugList.size)
+
+    return bugList
   }
 
-  def detectWebAppBugs(inFile: File): Unit = {
+  def init() =
+  {
+    // init
+    AddressManager.init()
+    Helper.init()
+    AnalyzeMain.isTimeout = false
+  }
+
+  def detectWebAppBugs(inFile: File): BugList2 = {
     val quiet = true
-    val tokens = Array[String]("webapp-bug-detector", "-dev", inFile.getCanonicalPath)
+
+    val option1 = Array[String]("webapp-bug-detector", "-dev")
+    val timeout_opt = if (timeout > 0) {
+      Array[String]("-timeout", timeout.toString)
+    } else {
+      Array[String]()
+    }
+    val tokens = option1 ++ timeout_opt ++ Array[String](inFile.getCanonicalPath)
+
+    //val tokens = Array[String]("webapp-bug-detector", "-dev", "-timeout", , inFile.getCanonicalPath)
     Shell.params = new ShellParameters()
     val errorMessage = Shell.params.Set(tokens)
     val pred = new Predefined(Shell.params)
@@ -167,7 +202,10 @@ object BugDetectorProxy
     Config.setQuietMode
     var locclone = Shell.params.opt_LocClone
 
+
+    // Init Global settings and Singleton Object.
     AddressManager.reset()
+
     val fileName: String = Shell.params.FileNames(0)
     val fileNames = JavaConversions.seqAsJavaList(Shell.params.FileNames)
     Config.setFileName(fileName)
@@ -188,7 +226,7 @@ object BugDetectorProxy
     Config.setDefaultUnrollingCount(Shell.params.opt_unrollingCount)
     Config.setDefaultForinUnrollingCount(Shell.params.opt_forinunrollingCount)
 
-    if (Shell.params.FileNames.length > 1) throw new UserError("Only one HTML file supported at a time.")
+    //if (Shell.params.FileNames.length > 1) throw new UserError("Only one HTML file supported at a time.")
     val low = fileName.toLowerCase
     if (!(low.endsWith(".html") || low.endsWith(".xhtml") || low.endsWith(".htm"))) throw new UserError("Not an HTML file.")
     // DOM mode
@@ -294,11 +332,7 @@ object BugDetectorProxy
 
     // Create Typing
     var typingInterface: TypingInterface = null
-    if (Shell.params.command == ShellParameters.CMD_ANALYZE ||
-      Shell.params.command == ShellParameters.CMD_HTML ||
-      Shell.params.command == ShellParameters.CMD_BUG_DETECTOR ||
-      Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR) typingInterface = new Typing(cfg, quiet, locclone)
-
+    typingInterface = new Typing(cfg, quiet, locclone)
 
     Config.setTypingInterface(typingInterface)
 
@@ -325,30 +359,51 @@ object BugDetectorProxy
     // Execute Bug Detector
     System.out.println("\n* Bug Detector *")
     val detector = new BugDetector(program2, cfg, typingInterface, quiet, irErrors.second)
-    if(!(Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR))
-      StrictModeChecker.checkAdvanced(program2, cfg, detector.varManager, detector.stateManager)
+    //if(!(Shell.params.command == ShellParameters.CMD_WEBAPP_BUG_DETECTOR))
+    //  StrictModeChecker.checkAdvanced(program2, cfg, detector.varManager, detector.stateManager)
 
     val bugStorage = detector.detectBug2
     val bugList = bugStorage.getBugList()
 
-    bugList.foreach( x => println(stringfy(x)) )
+    //bugList.foreach( x => println(stringfy(x)) )
+    println("Total #bugs: " + bugList.size)
+
+    return bugList
+  }
+
+
+  private def stringfy(in: BugEntry2): String =
+  {
+    // this is temporary. don't use.
+    val startLoc = "%d:%d".format(in._4.getLine, in._4.getOffset)
+    val endLoc = "%d:%d".format(in._5.getLine, in._5.getOffset)
+    val filePath = in._3
+
+    // [
+    val vector = "%d,%s,%s,%s,%d,%s".format(in._2, filePath, startLoc, endLoc, in._6, in._7)
+
+    return vector
   }
 
   def main(args: Array[String]): Unit =
   {
     // TODO: this is just for test
-    //detectJSBugs(new File("benchmarks/kraken_v1.1/stanford-crypto-aes.js"))
-    detectWebAppBugs(new File("tmp/webapp/public/index.html"))
-  }
+    /*detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/qweb2.js"))
+    init()
+    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/website_snippets_animation.js"))
+    init()
+    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/es5-shim.min.js"))
+    init()
+    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/libs/semantic.min.js"))
+    init()*/
 
-  def stringfy(in: BugEntry2): String =
-  {
-    val startLoc = "%d:%d".format(in._4.getLine, in._4.getOffset)
-    val endLoc = "%d:%d".format(in._5.getLine, in._5.getOffset)
-    val filePath = in._3
-
-    val vector = "%d,%s,%s,%s,%d,%s".format(in._2, filePath, startLoc, endLoc, in._6, in._7)
-
-    return vector
+    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/content/us/steedos/buy.html"))
+    init()
+    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/layouts/developer_cn.html"))
+    init()
+    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites//content/index.html"))
+    init()
+    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/layouts/help_us.html"))
+    init()
   }
 }

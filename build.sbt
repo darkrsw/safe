@@ -6,11 +6,15 @@ version := "1.0"
 
 scalaVersion := "2.9.2"
 
+resolvers += Resolver.mavenLocal
 publishTo := Some(Resolver.mavenLocal)
 //publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test"
-// libraryDependencies += "lu.uni" % "repo-utils" % "1.0"
+libraryDependencies += "commons-io" % "commons-io" % "2.5"
+libraryDependencies += "com.google.guava" % "guava" % "19.0"
+libraryDependencies += "org.eclipse.jgit" % "org.eclipse.jgit" % "4.5.0.201609210915-r"
+
 
 parallelExecution in Test := false
 

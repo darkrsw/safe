@@ -86,6 +86,14 @@ object AddressManager {
   def reset() = {
     manager = new AddressManager()
   }
+
+  def init() =
+  {
+    systemStartAddr = -1
+    //systemAddrTable.clear()
+    //revSystemAddrTable.clear()
+  }
+
   def addrToLoc(addr: Address, recency: RecencyTag): Loc = (addr << 1) | recency
 
   def locToAddr(loc: Loc): Address = loc >> 1

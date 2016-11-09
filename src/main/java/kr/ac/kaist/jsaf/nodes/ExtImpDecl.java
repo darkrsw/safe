@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class ExtImpDecl, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Sun Oct 23 18:57:59 CEST 2016
+ * @version  Generated automatically by ASTGen at Mon Oct 24 17:42:23 CEST 2016
  */
 @SuppressWarnings("unused")
 public class ExtImpDecl extends SourceElement {

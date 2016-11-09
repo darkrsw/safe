@@ -15,6 +15,7 @@ import kr.ac.kaist.jsaf.analysis.cfg._
 import kr.ac.kaist.jsaf.analysis.typing.domain._
 import kr.ac.kaist.jsaf.analysis.typing.debug.DebugConsoleDSparse
 import kr.ac.kaist.jsaf.Shell
+import kr.ac.kaist.jsaf.shell.AnalyzeMain
 
 class DSparseFixpoint(cfg: CFG, env: DSparseEnv, worklist: Worklist, inTable: Table, quiet: Boolean, locclone: Boolean) {
   private val sem = new Semantics(cfg, worklist, locclone)
@@ -40,7 +41,10 @@ class DSparseFixpoint(cfg: CFG, env: DSparseEnv, worklist: Worklist, inTable: Ta
     if(!quiet) System.out.println()
     loop()
     if(!quiet) System.out.println()
-    if(isTimeout) System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+    if(isTimeout) {
+      System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+      AnalyzeMain.isTimeout = true
+    }
     if(!quiet) System.out.println("# edge recovering time: "+time)
     
     if (Config.debugger)

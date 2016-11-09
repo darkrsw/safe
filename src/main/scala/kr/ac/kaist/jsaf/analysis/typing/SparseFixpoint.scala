@@ -14,6 +14,7 @@ import scala.collection.immutable.HashSet
 import kr.ac.kaist.jsaf.analysis.cfg._
 import kr.ac.kaist.jsaf.analysis.typing.domain._
 import kr.ac.kaist.jsaf.Shell
+import kr.ac.kaist.jsaf.shell.AnalyzeMain
 
 class SparseFixpoint(cfg: CFG, env: SparseEnv, worklist: Worklist, inTable: Table, quiet: Boolean, locclone: Boolean) {
   private val sem = new Semantics(cfg, worklist, locclone)
@@ -33,7 +34,10 @@ class SparseFixpoint(cfg: CFG, env: SparseEnv, worklist: Worklist, inTable: Tabl
     System.out.println()
     loop()
     System.out.println()
-    if(isTimeout) System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+    if(isTimeout) {
+      System.out.println("*** Analysis time out! (" + Shell.params.opt_Timeout + " sec)")
+      AnalyzeMain.isTimeout = true
+    }
     if (!quiet)
       System.out.println("# edge recovering time: "+time)
   }
