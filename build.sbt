@@ -15,6 +15,7 @@ libraryDependencies += "commons-io" % "commons-io" % "2.5"
 libraryDependencies += "com.google.guava" % "guava" % "19.0"
 libraryDependencies += "org.eclipse.jgit" % "org.eclipse.jgit" % "4.5.0.201609210915-r"
 
+packAutoSettings
 
 parallelExecution in Test := false
 
