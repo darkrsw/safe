@@ -1,8 +1,10 @@
 package edu.lu.uni.serval.js.exp.safe
 
 import java.io.File
+import java.net.URLClassLoader
 
 import edu.lu.uni.serval.scm.git.{GitCommands, GitProxy}
+import kr.ac.kaist.jsaf.shell.BugDetectorProxy
 import org.apache.commons.io.FileUtils
 
 /**
@@ -12,9 +14,9 @@ object AlarmCollectorByPack
 {
   def main(args: Array[String]): Unit =
   {
-    if(args.size != 2)
+    if(args.size != 3)
     {
-      println("Incorrect arguments.")
+      println("Incorrect # of arguments.")
       Runtime.getRuntime.exit(1)
     }
 
@@ -27,7 +29,9 @@ object AlarmCollectorByPack
     val outRoot = new File(args(1) + "/alarms")
     val logRoot = new File(args(1) + "/logs")
 
-    if( ! packRoot.isDirectory) return
+    BugDetectorProxy.classPathString = args(2)
+
+    if( ! packRoot.isDirectory) { println("pack directory does not exist: " + packRoot.getCanonicalPath); return;}
     //if( ! outRoot.isDirectory) return
     //if( ! logRoot.isDirectory) return
 

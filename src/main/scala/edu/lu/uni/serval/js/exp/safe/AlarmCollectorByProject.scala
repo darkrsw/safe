@@ -28,7 +28,7 @@ object AlarmCollectorByProject
       lines.map( x => { new File(repoDir, x) } )
     } else { List[File]() }*/
 
-    def inLoop(x: File, mode: File => BugList2) =
+    def inLoop(x: File, mode: (String, String) => (Int, String) ) =
     {
       val filepath = x.getCanonicalPath.replace(repoDir.getCanonicalPath, "")
       println("\n\nprocessing: " + filepath)
@@ -37,16 +37,17 @@ object AlarmCollectorByProject
 
       val (success, msg) =
         try {
+          val (code, list) = mode(x.getCanonicalPath, filepath)
 
-          val alarms = mode(x)
+          //if( ! isTimeout ) {
+          if( code == 0) {
+            //val vectors = alarms.map(x => vectorize(x, filepath))
 
-          if( ! AnalyzeMain.isTimeout ) {
-            val vectors = alarms.map(x => vectorize(x, filepath))
 
-            FileUtils.writeLines(outFile, "UTF-8", vectors.asJavaCollection, true)
+            FileUtils.write(outFile, list, "UTF-8", true)
             (true, "success")
           } else {
-            (false, "timeout")
+            (false, errmsg(code))
           }
 
         } catch {
@@ -55,7 +56,7 @@ object AlarmCollectorByProject
 
       val duration = System.currentTimeMillis() - startTime
 
-      BugDetectorProxy.init()
+      println(filepath + " --- time taken: " + duration)
 
       if(!success)
         FileUtils.write(logFile, filepath + ":FAILED=>" + msg + "\n", "UTF-8", true)
@@ -63,30 +64,25 @@ object AlarmCollectorByProject
         FileUtils.write(logFile, filepath + ":SUCCESS=>" + duration + "\n", "UTF-8", true)
     }
 
-    jss.foreach( x => inLoop(x, BugDetectorProxy.detectJSBugs) )
-    htmls.foreach( x => inLoop(x, BugDetectorProxy.detectWebAppBugs) )
+    jss.foreach( x => inLoop(x, BugDetectorProxy.detectJSBugsOnJVM) )
+    htmls.foreach( x => inLoop(x, BugDetectorProxy.detectWebAppBugsOnJVM) )
   }
 
-  def vectorize(in: BugEntry2, path: String): String =
+  def errmsg(code: Int): String =
   {
-    val startLoc = "%d:%d".format(in._4.getLine, in._4.getOffset)
-    val endLoc = "%d:%d".format(in._5.getLine, in._5.getOffset)
-    val vector = "%s,%s,%s,%s,%s,%s".format(quote(path), quote(in._2.toString),
-      quote(startLoc), quote(endLoc), quote(in._6.toString), quote(in._7) )
-    //val vector = path :: in._2.toString :: startLoc :: endLoc :: in._6.toString :: in._7 :: Nil
-
-    return vector
-  }
-
-  def quote(in: String): String =
-  {
-    "\"%s\"".format(in.replaceAll("\\\"", "'").replaceAll("(\\r|\\n)+", ""))
+    code match {
+      case 33 => "Invalid # of arguments."
+      case 2 => "File not found."
+      case 3 => "Runtime exception."
+      case 4 => "Execution timeout."
+      case _ => "Unknown error: " + code
+    }
   }
 
   def main(args: Array[String]): Unit =
   {
     // TODO this is only for testing.
-    val repoDir = new File("tmp/repo-pack-13/steedos$steedos-sites")
+    /*val repoDir = new File("tmp/repo-pack-13/steedos$steedos-sites")
     val webappList = Some(new File("tmp/classification/repo-pack-13/steedos$steedos-sites.list"))
     val outFile = new File("tmp/samples.alarms")
     val logFile = new File("tmp/samples.log")
@@ -94,6 +90,21 @@ object AlarmCollectorByProject
     collect("steedos$steedos-sites", repoDir, outFile, logFile)
 
     println("finished: " + "steedos$steedos-sites")
-    Runtime.getRuntime.exit(0)
+    Runtime.getRuntime.exit(0)*/
+    BugDetectorProxy.classPathString = "./target/scala-2.9.2/classes:./target/pack/lib/*"
+
+    {
+      val (code, list) = BugDetectorProxy.detectJSBugsOnJVM(
+        "/Users/darkrsw/git/safe/tmp/repo-pack-13/steedos$steedos-sites/static/libs/semantic.js", "static/libs/semantic.js")
+      println(code)
+      println(list)
+    }
+
+    {
+      val (code, list) = BugDetectorProxy.detectWebAppBugsOnJVM(
+        "/Users/darkrsw/git/safe/tmp/repo-pack-13/steedos$steedos-sites/content/us/search.html", "./content/us/search.html")
+      println(code)
+      println(list)
+    }
   }
 }
