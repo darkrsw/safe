@@ -9,7 +9,11 @@
 		extra-scalaVersion="2.10"
 		conf="scala-tool"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+<<<<<<< HEAD
 		date="20161109164435"/>
+=======
+		date="20161115165620"/>
+>>>>>>> a405393875e78bd60045607102ff97bc7cffb469
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-compiler">
 			<revision name="2.10.6" status="release" pubdate="20150918113547" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, optional, compile, runtime, optional(default), master" position="0">

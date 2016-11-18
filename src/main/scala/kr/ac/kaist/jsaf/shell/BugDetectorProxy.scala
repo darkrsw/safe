@@ -13,22 +13,49 @@ import kr.ac.kaist.jsaf.scala_src.useful.Lists._
 import edu.rice.cs.plt.tuple.{Option => JOption}
 import kr.ac.kaist.jsaf.useful.{MemoryMeasurer, Pair, Useful}
 import kr.ac.kaist.jsaf.analysis.cfg.CFGBuilder
-import kr.ac.kaist.jsaf.analysis.lib.HeapTreeMap
 import kr.ac.kaist.jsaf.nodes_util.{DOMStatistics, JSFromHTML, NodeRelation, NodeUtil}
 import kr.ac.kaist.jsaf.analysis.typing.models.DOMBuilder
 import kr.ac.kaist.jsaf.bug_detector.{BugDetector, BugEntry2, BugList2, StrictModeChecker}
 import kr.ac.kaist.jsaf.analysis.typing.Helper
-import kr.ac.kaist.jsaf.analysis.typing.domain._
 
 import scala.collection.JavaConversions
+import scala.sys.process.{Process, ProcessLogger}
 
 /**
   * Created by darkrsw on 2016/October/22.
   */
 object BugDetectorProxy
 {
-  // default 5min
+  // default 2min
   var timeout = 60 * 2
+
+  // class path (should be set by other classes)
+  var classPathString: String = ""
+
+  def detectBugsOnJVM(opt: String, filePath: String, relPath: String): (Int, String) =
+  {
+    val cmd = "java -cp " + classPathString +  " -Xmx4g " +
+      "kr.ac.kaist.jsaf.shell.BugDetectorProxy " + opt + " " + filePath + " " + relPath
+
+    val stdout = new StringBuilder
+    val stderr = new StringBuilder
+
+    val recorder = ProcessLogger(
+      (o: String) => if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
+      (e: String) => Console.err.println(e+"\n")
+    )
+
+    val exitCode = Process(cmd) ! recorder
+
+    (exitCode, stdout.toString())
+  }
+
+  def detectJSBugsOnJVM(filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("jss", filePath, relPath)
+
+  def detectWebAppBugsOnJVM(filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("webapp", filePath, relPath)
+
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////
 
   def detectJSBugs(inFile: File): BugList2 = {
     val quiet = true
@@ -385,25 +412,65 @@ object BugDetectorProxy
     return vector
   }
 
+  private def vectorize(in: BugEntry2, path: String): String =
+  {
+    val startLoc = "%d:%d".format(in._4.getLine, in._4.getOffset)
+    val endLoc = "%d:%d".format(in._5.getLine, in._5.getOffset)
+    val vector = "%s,%s,%s,%s,%s,%s".format(quote(path), quote(in._2.toString),
+      quote(startLoc), quote(endLoc), quote(in._6.toString), quote(in._7) )
+    //val vector = path :: in._2.toString :: startLoc :: endLoc :: in._6.toString :: in._7 :: Nil
+
+    return vector
+  }
+
+  private def quote(in: String): String =
+  {
+    "\"%s\"".format(in.replaceAll("\\\"", "'").replaceAll("(\\r|\\n)+", ""))
+  }
+
   def main(args: Array[String]): Unit =
   {
-    // TODO: this is just for test
-    /*detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/qweb2.js"))
-    init()
-    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/website_snippets_animation.js"))
-    init()
-    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/js/odoo/es5-shim.min.js"))
-    init()
-    detectJSBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/static/libs/semantic.min.js"))
-    init()*/
+    if(args.length != 3)
+    {
+      Console.err.println("Invalid # of arguments.")
+      Runtime.getRuntime.exit(33)
+    }
 
-    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/content/us/steedos/buy.html"))
-    init()
-    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/layouts/developer_cn.html"))
-    init()
-    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites//content/index.html"))
-    init()
-    detectWebAppBugs(new File("tmp/repo-pack-13/steedos$steedos-sites/layouts/help_us.html"))
-    init()
+    val mode = args(0)
+    val path = args(1)
+    val relPath = args(2)
+
+    val targetFile = new File(path)
+
+    if( ! targetFile.exists() || ! targetFile.isFile )
+    {
+      Console.err.println(path + " does not exist.")
+      Runtime.getRuntime.exit(2)
+    }
+
+    try {
+      val buglist = mode match {
+        case "jss" => detectJSBugs(targetFile)
+        case "webapp" => detectWebAppBugs(targetFile)
+      }
+
+      if( ! AnalyzeMain.isTimeout )
+      {
+        for( a <- buglist )
+        {
+          val csv = vectorize(a, relPath)
+          Console.println("OUTPUT:"+csv)
+        }
+      }
+      else {
+        Console.err.println(path + ": timeout (" + timeout + ")")
+        Runtime.getRuntime.exit(4) // timeout
+      }
+
+    } catch {
+      case e: Throwable => { Console.println("ERROR: " + e.getMessage); e.printStackTrace(); Runtime.getRuntime.exit(3); }
+    }
+
+    Runtime.getRuntime.exit(0)
   }
 }
