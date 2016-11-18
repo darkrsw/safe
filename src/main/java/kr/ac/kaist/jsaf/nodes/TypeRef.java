@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class TypeRef, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Mon Oct 24 17:42:23 CEST 2016
+ * @version  Generated automatically by ASTGen at Wed Nov 09 11:44:31 CET 2016
  */
 @SuppressWarnings("unused")
 public class TypeRef extends Type {

@@ -63,3 +63,6 @@ exit
 compile
 ls
 exit
+antRun clean compile
+compile
+exit
