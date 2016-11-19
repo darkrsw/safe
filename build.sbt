@@ -4,7 +4,7 @@ organization := "kr.ac.kaist.jsaf"
 name := "JSAF"
 version := "1.0"
 
-scalaVersion := "2.9.2"
+scalaVersion := "2.9.3"
 
 resolvers += Resolver.mavenLocal
 publishTo := Some(Resolver.mavenLocal)

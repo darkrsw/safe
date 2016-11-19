@@ -19,7 +19,10 @@ import kr.ac.kaist.jsaf.bug_detector.{BugDetector, BugEntry2, BugList2, StrictMo
 import kr.ac.kaist.jsaf.analysis.typing.Helper
 
 import scala.collection.JavaConversions
-import scala.sys.process.{Process, ProcessLogger}
+import scala.sys.process._
+import scala.concurrent._
+import scala.concurrent.duration._
+import ExecutionContext.Implicits.global
 
 /**
   * Created by darkrsw on 2016/October/22.
@@ -27,7 +30,7 @@ import scala.sys.process.{Process, ProcessLogger}
 object BugDetectorProxy
 {
   // default 2min
-  var timeout = 60 * 2
+  var timeout = 60 * 3
 
   // class path (should be set by other classes)
   var classPathString: String = ""
@@ -38,14 +41,24 @@ object BugDetectorProxy
       "kr.ac.kaist.jsaf.shell.BugDetectorProxy " + opt + " " + filePath + " " + relPath
 
     val stdout = new StringBuilder
-    val stderr = new StringBuilder
+    //val stderr = new StringBuilder
 
     val recorder = ProcessLogger(
       (o: String) => if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
       (e: String) => Console.err.println(e+"\n")
     )
 
-    val exitCode = Process(cmd) ! recorder
+    val proc = cmd.run(recorder)
+
+    val f = Future(blocking(proc.exitValue()))
+    val exitCode = try {
+      Await.result(f, timeout second)
+    } catch {
+      case e: TimeoutException =>
+        Console.err.println("Timeout from JVM...")
+        proc.destroy()
+        proc.exitValue()
+    }
 
     (exitCode, stdout.toString())
   }
