@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class WIDL, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Wed Nov 09 11:44:32 CET 2016
+ * @version  Generated automatically by ASTGen at Fri Nov 18 18:56:40 CET 2016
  */
 @SuppressWarnings("unused")
 public abstract class WIDL extends UIDObject implements WIDLNode {

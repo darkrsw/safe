@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class AssignOpApp, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Wed Nov 09 11:44:31 CET 2016
+ * @version  Generated automatically by ASTGen at Fri Nov 18 18:56:39 CET 2016
  */
 @SuppressWarnings("unused")
 public class AssignOpApp extends Expr {

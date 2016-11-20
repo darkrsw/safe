@@ -9,6 +9,7 @@ tmp/
 .lib/
 dist/*
 target/*
+target/.history
 lib_managed/*
 src_managed/*
 project/boot/*
