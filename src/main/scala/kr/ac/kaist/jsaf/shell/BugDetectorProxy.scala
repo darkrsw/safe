@@ -1,28 +1,26 @@
 package kr.ac.kaist.jsaf.shell
 
-import java.io.{BufferedWriter, File, FileWriter, IOException}
+import java.io.{BufferedWriter, File, FileWriter}
 
-import kr.ac.kaist.jsaf.{ProjectProperties, Shell, ShellParameters}
-import kr.ac.kaist.jsaf.analysis.typing.{AddressManager, Config, InitHeap, Typing, TypingInterface}
-import kr.ac.kaist.jsaf.compiler.Predefined
-import kr.ac.kaist.jsaf.nodes.{IRRoot, Program}
-import kr.ac.kaist.jsaf.compiler.Parser
-import kr.ac.kaist.jsaf.scala_src.nodes.{SProgram, STopLevel}
-import kr.ac.kaist.jsaf.exceptions.UserError
-import kr.ac.kaist.jsaf.scala_src.useful.Lists._
 import edu.rice.cs.plt.tuple.{Option => JOption}
-import kr.ac.kaist.jsaf.useful.{MemoryMeasurer, Pair, Useful}
 import kr.ac.kaist.jsaf.analysis.cfg.CFGBuilder
-import kr.ac.kaist.jsaf.nodes_util.{DOMStatistics, JSFromHTML, NodeRelation, NodeUtil}
 import kr.ac.kaist.jsaf.analysis.typing.models.DOMBuilder
+import kr.ac.kaist.jsaf.analysis.typing.{AddressManager, Config, Helper, InitHeap, Typing, TypingInterface}
 import kr.ac.kaist.jsaf.bug_detector.{BugDetector, BugEntry2, BugList2, StrictModeChecker}
-import kr.ac.kaist.jsaf.analysis.typing.Helper
+import kr.ac.kaist.jsaf.compiler.{Parser, Predefined}
+import kr.ac.kaist.jsaf.exceptions.UserError
+import kr.ac.kaist.jsaf.nodes.{IRRoot, Program}
+import kr.ac.kaist.jsaf.nodes_util.{DOMStatistics, JSFromHTML, NodeRelation, NodeUtil}
+import kr.ac.kaist.jsaf.scala_src.nodes.{SProgram, STopLevel}
+import kr.ac.kaist.jsaf.scala_src.useful.Lists._
+import kr.ac.kaist.jsaf.useful.Pair
+import kr.ac.kaist.jsaf.{ProjectProperties, Shell, ShellParameters}
 
 import scala.collection.JavaConversions
-import scala.sys.process._
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent._
 import scala.concurrent.duration._
-import ExecutionContext.Implicits.global
+import scala.sys.process._
 
 /**
   * Created by darkrsw on 2016/October/22.
@@ -45,7 +43,7 @@ object BugDetectorProxy
 
     val recorder = ProcessLogger(
       (o: String) => if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
-      (e: String) => Console.err.println(e+"\n")
+      (e: String) => Console.err.println(e)
     )
 
     val proc = cmd.run(recorder)
@@ -57,7 +55,8 @@ object BugDetectorProxy
       case e: TimeoutException =>
         Console.err.println("Timeout from JVM...")
         proc.destroy()
-        proc.exitValue()
+        killProcess(proc) // to send SIGKILL
+        4 // exitCode = 4
     }
 
     (exitCode, stdout.toString())
@@ -485,5 +484,20 @@ object BugDetectorProxy
     }
 
     Runtime.getRuntime.exit(0)
+  }
+
+  def getPID(proc: Process): Int =
+  {
+    val cl = proc.getClass
+    val field = cl.getDeclaredField("pid")
+    field.setAccessible(true)
+    val pidObject = field.get(proc)
+    return pidObject.asInstanceOf[Int]
+  }
+
+  def killProcess(proc: Process): Int =
+  {
+    val pid = getPID(proc)
+    return Runtime.getRuntime.exec("kill -9 " + pid).waitFor()
   }
 }
