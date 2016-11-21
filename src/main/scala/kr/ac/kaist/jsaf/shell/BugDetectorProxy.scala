@@ -27,7 +27,7 @@ import scala.sys.process._
   */
 object BugDetectorProxy
 {
-  // default 2min
+  // default timeout
   var timeout = 60 * 3
 
   // class path (should be set by other classes)
@@ -54,8 +54,8 @@ object BugDetectorProxy
     } catch {
       case e: TimeoutException =>
         Console.err.println("Timeout from JVM...")
-        proc.destroy()
         killProcess(proc) // to send SIGKILL
+        proc.destroy()
         4 // exitCode = 4
     }
 

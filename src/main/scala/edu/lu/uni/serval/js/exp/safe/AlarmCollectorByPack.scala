@@ -35,7 +35,7 @@ object AlarmCollectorByPack
     //if( ! outRoot.isDirectory) return
     //if( ! logRoot.isDirectory) return
 
-    val packlogFile = new File(outRoot, "pack.log")
+    val packlogFile = new File(logRoot, "pack.log")
 
     val repos = packRoot.listFiles().filter(_.isDirectory)
 
