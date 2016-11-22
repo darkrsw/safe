@@ -1,6 +1,8 @@
 package kr.ac.kaist.jsaf.shell
 
 import java.io.{BufferedWriter, File, FileWriter}
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 import edu.rice.cs.plt.tuple.{Option => JOption}
 import kr.ac.kaist.jsaf.analysis.cfg.CFGBuilder
@@ -50,11 +52,11 @@ object BugDetectorProxy
 
     val f = Future(blocking(proc.exitValue()))
     val exitCode = try {
-      Await.result(f, timeout second)
+      Await.result(f, timeout+1 second)
     } catch {
       case e: TimeoutException =>
-        Console.err.println("Timeout from JVM...")
-        killProcess(proc) // to send SIGKILL
+        Console.err.println(getTimeString() + "Timeout from JVM...")
+        //killProcess(proc) // to send SIGKILL
         proc.destroy()
         4 // exitCode = 4
     }
@@ -499,5 +501,12 @@ object BugDetectorProxy
   {
     val pid = getPID(proc)
     return Runtime.getRuntime.exec("kill -9 " + pid).waitFor()
+  }
+
+  def getTimeString(): String =
+  {
+    val now = Calendar.getInstance().getTime()
+    val minuteFormat = new SimpleDateFormat("[hh:mm:ss]:")
+    minuteFormat.format(now)
   }
 }

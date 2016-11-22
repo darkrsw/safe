@@ -16,7 +16,7 @@ import edu.rice.cs.plt.tuple.Option;
 /**
  * Class WExceptionField, a component of the ASTGen-generated composite hierarchy.
  * Note: null is not allowed as a value for any field.
- * @version  Generated automatically by ASTGen at Fri Nov 18 18:56:40 CET 2016
+ * @version  Generated automatically by ASTGen at Mon Nov 21 18:10:57 CET 2016
  */
 @SuppressWarnings("unused")
 public class WExceptionField extends WMember implements WExceptionMember {

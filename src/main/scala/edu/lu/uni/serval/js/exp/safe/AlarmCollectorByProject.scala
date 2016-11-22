@@ -2,14 +2,11 @@ package edu.lu.uni.serval.js.exp.safe
 
 import java.io.File
 
-import kr.ac.kaist.jsaf.bug_detector._
-import kr.ac.kaist.jsaf.shell.{AnalyzeMain, BugDetectorProxy}
+import kr.ac.kaist.jsaf.shell.BugDetectorProxy
 import kr.ac.kaist.jsaf.utils.file.FileScanner
-
-import scala.collection.JavaConverters._
 import org.apache.commons.io.FileUtils
 
-import scala.io.Source
+import kr.ac.kaist.jsaf.shell.BugDetectorProxy._
 
 /**
   * Created by darkrsw on 2016/October/24.
@@ -31,7 +28,7 @@ object AlarmCollectorByProject
     def inLoop(x: File, mode: (String, String) => (Int, String) ) =
     {
       val filepath = x.getCanonicalPath.replace(repoDir.getCanonicalPath, "")
-      println("\n\nprocessing: " + filepath)
+      println("\n\n" + getTimeString() + "processing: " + filepath)
 
       val startTime = System.currentTimeMillis()
 
@@ -56,7 +53,7 @@ object AlarmCollectorByProject
 
       val duration = System.currentTimeMillis() - startTime
 
-      println(filepath + " --- time taken: " + duration)
+      println(getTimeString() + filepath + " --- time taken: " + duration)
 
       if(!success)
         FileUtils.write(logFile, filepath + ":FAILED=>" + msg + "\n", "UTF-8", true)

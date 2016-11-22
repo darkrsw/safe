@@ -68,3 +68,6 @@ compile
 exit
 compile
 exit
+antRun clean compile
+compile
+exit
