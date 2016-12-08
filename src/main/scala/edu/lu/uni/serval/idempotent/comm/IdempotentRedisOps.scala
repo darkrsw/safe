@@ -20,21 +20,25 @@ object IdempotentRedisOps
 
   def setAlreadyProcessed(key: String) =
   {
-    jedis.set(key, "DONE")
+    jedis.synchronized {
+      jedis.set(key, "DONE")
+    }
   }
 
   def checkAlreadyProcessed(key: String): Boolean =
   {
-    val value = jedis.get(key)
+    jedis.synchronized {
+      val value = jedis.get(key)
 
-    if( value == null )
-      return false
-    else if( value == "DONE" )
-      return true
-    else {
-      // Unexpected value!
-      Console.println("Unknown value! for " + key)
-      return false
+      if (value == null)
+        return false
+      else if (value == "DONE")
+        return true
+      else {
+        // Unexpected value!
+        Console.println("Unknown value! [%s] for key[%s]".format(value, key))
+        return false
+      }
     }
   }
 }

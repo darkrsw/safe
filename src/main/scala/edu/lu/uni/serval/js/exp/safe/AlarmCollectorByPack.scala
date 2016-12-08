@@ -125,7 +125,10 @@ object AlarmCollectorByPack
                 } catch {
                   case e: Throwable =>
                     //FileUtils.write(commitlog, c.getName + ":FAILED=>" + e.getMessage + "\n", "UTF-8", true)
-                    ResultSender.sendCommitLog(projectName, c.getName, "FAILED", e.getMessage)
+                    {
+                      e.printStackTrace()
+                      ResultSender.sendCommitLog(projectName, c.getName, "FAILED", e.getMessage)
+                    }
                 } finally {
 
                   // ### Set this <project, commit> already processed.
@@ -144,7 +147,10 @@ object AlarmCollectorByPack
 
           } catch {
             case e: Throwable => //FileUtils.write(packlogFile, projectName + ":FAILED=>" + e.getMessage + "\n", "UTF-8", true)
+            {
+              e.printStackTrace()
               ResultSender.sendProjectLog(projectName, "FAILED", e.getMessage)
+            }
           } finally {
 
             // ### Set this project already processed.

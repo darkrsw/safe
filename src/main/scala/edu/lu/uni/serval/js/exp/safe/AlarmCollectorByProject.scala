@@ -1,23 +1,38 @@
 package edu.lu.uni.serval.js.exp.safe
 
 import java.io.File
+import java.util.concurrent.{ConcurrentLinkedQueue, Future}
 
 import edu.lu.uni.serval.idempotent.comm.{IdempotentRedisOps, ResultSender}
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy
 import kr.ac.kaist.jsaf.utils.file.FileScanner
-
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy._
+
+import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
 
 /**
   * Created by darkrsw on 2016/October/24.
   */
 object AlarmCollectorByProject
 {
+  val nCores = Runtime.getRuntime.availableProcessors()
+  Console.println("# Cores: " + nCores)
+
+  val pool = java.util.concurrent.Executors.newFixedThreadPool(nCores-1)
+
   def collect(pname: String, repoDir: File, commitHash: String /*, outFile: File, logFile: File*/) =
   {
+
     // collecting all js files.
     val jss = FileScanner.collectJSFiles(repoDir.getCanonicalPath)
     val htmls = FileScanner.collectHTMLFiles(repoDir.getCanonicalPath)
+
+    // Queueing file paths.
+    //val workQueue = new ConcurrentLinkedQueue[String]()
+
+    //jss.foreach(workQueue.add(_))
+    //htmls.foreach(workQueue.add(_))
 
     def inLoop(x: File, mode: (String, String, String, String) => (Int, String) ) =
     {
@@ -31,6 +46,8 @@ object AlarmCollectorByProject
 
         val (success, msg) =
           try {
+
+            // TODO: This should be parallelized.
             val (code, err) = mode(pname, commitHash, x.getCanonicalPath, filepath)
 
             if (code == 0) {
@@ -68,9 +85,36 @@ object AlarmCollectorByProject
 
     }
 
-    jss.foreach( x => inLoop(x, BugDetectorProxy.detectJSBugsOnJVM) )
-    htmls.foreach( x => inLoop(x, BugDetectorProxy.detectWebAppBugsOnJVM) )
+    val futures = ListBuffer[Future[_]]()
+
+    jss.foreach( x => futures += (pool.submit(
+          new Runnable {
+            def run: Unit ={
+              inLoop(x, BugDetectorProxy.detectJSBugsOnJVM)
+            }
+          }
+        )
+      )
+    )
+
+    htmls.foreach( x => futures +=  (pool.submit(
+          new Runnable {
+            def run: Unit = {
+              inLoop(x, BugDetectorProxy.detectWebAppBugsOnJVM)
+            }
+          }
+        )
+      )
+    )
+
+    futures.foreach(_.get())
+    Console.println("Commit[%s]...all collected.".format(commitHash))
   }
+
+
+
+
+
 
   def errmsg(code: Int): String =
   {

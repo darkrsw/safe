@@ -38,7 +38,9 @@ object ResultSender
 
   def sendResult(queue: String, msg: String) =
   {
-    channel.basicPublish("", queue, null, msg.getBytes())
+    channel.synchronized {
+      channel.basicPublish("", queue, null, msg.getBytes())
+    }
     Console.println("To [%s] Sent '".format(queue) + msg + "'")
   }
 
