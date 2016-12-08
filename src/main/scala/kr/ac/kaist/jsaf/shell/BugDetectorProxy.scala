@@ -4,6 +4,8 @@ import java.io.{BufferedWriter, File, FileWriter}
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
+import edu.lu.uni.serval.idempotent.comm.ResultSender
+import edu.lu.uni.serval.js.exp.safe.AlarmCollectorByPack
 import edu.rice.cs.plt.tuple.{Option => JOption}
 import kr.ac.kaist.jsaf.analysis.cfg.CFGBuilder
 import kr.ac.kaist.jsaf.analysis.typing.models.DOMBuilder
@@ -35,17 +37,19 @@ object BugDetectorProxy
   // class path (should be set by other classes)
   var classPathString: String = ""
 
-  def detectBugsOnJVM(opt: String, filePath: String, relPath: String): (Int, String) =
+  def detectBugsOnJVM(opt: String, pname: String, commitHash: String, filePath: String, relPath: String): (Int, String) =
   {
+    val arguments = "%s %s %s %s %s %s".format(opt, pname, commitHash, filePath, relPath, AlarmCollectorByPack.CONF_PATH)
+
     val cmd = "java -cp " + classPathString +  " -Xmx4g " +
-      "kr.ac.kaist.jsaf.shell.BugDetectorProxy " + opt + " " + filePath + " " + relPath
+      "kr.ac.kaist.jsaf.shell.BugDetectorProxy " + arguments
 
     val stdout = new StringBuilder
-    //val stderr = new StringBuilder
+    val stderr = new StringBuilder
 
     val recorder = ProcessLogger(
-      (o: String) => if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
-      (e: String) => Console.err.println(e)
+      (o: String) => Console.println(o), //if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
+      (e: String) => stderr.append(e+"\n")
     )
 
     val proc = cmd.run(recorder)
@@ -61,16 +65,17 @@ object BugDetectorProxy
         4 // exitCode = 4
     }
 
-    (exitCode, stdout.toString())
+    (exitCode, stderr.toString())
   }
 
-  def detectJSBugsOnJVM(filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("jss", filePath, relPath)
+  def detectJSBugsOnJVM(pname: String, commitHash: String, filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("jss", pname, commitHash, filePath, relPath)
 
-  def detectWebAppBugsOnJVM(filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("webapp", filePath, relPath)
+  def detectWebAppBugsOnJVM(pname: String, commitHash: String, filePath: String, relPath: String): (Int, String) = detectBugsOnJVM("webapp", pname, commitHash, filePath, relPath)
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
 
+  //@deprecated
   def detectJSBugs(inFile: File): BugList2 = {
     val quiet = true
     val option1 = Array[String]("bug-detector", "-dev")
@@ -216,6 +221,8 @@ object BugDetectorProxy
     return bugList
   }
 
+  // Not necessary anymore.
+  @deprecated
   def init() =
   {
     // init
@@ -224,6 +231,7 @@ object BugDetectorProxy
     AnalyzeMain.isTimeout = false
   }
 
+  //@deprecated
   def detectWebAppBugs(inFile: File): BugList2 = {
     val quiet = true
 
@@ -413,6 +421,7 @@ object BugDetectorProxy
   }
 
 
+  @deprecated
   private def stringfy(in: BugEntry2): String =
   {
     // this is temporary. don't use.
@@ -444,15 +453,18 @@ object BugDetectorProxy
 
   def main(args: Array[String]): Unit =
   {
-    if(args.length != 3)
+    if(args.length != 6)
     {
-      Console.err.println("Invalid # of arguments.")
+      Console.err.println("Invalid # of arguments: " + args.length)
       Runtime.getRuntime.exit(33)
     }
 
     val mode = args(0)
-    val path = args(1)
-    val relPath = args(2)
+    val pname = args(1)
+    val commit = args(2)
+    val path = args(3)
+    val relPath = args(4)
+    AlarmCollectorByPack.init(args(5))
 
     val targetFile = new File(path)
 
@@ -473,7 +485,8 @@ object BugDetectorProxy
         for( a <- buglist )
         {
           val csv = vectorize(a, relPath)
-          Console.println("OUTPUT:"+csv)
+          //Console.println("OUTPUT:"+csv)
+          ResultSender.sendAlarm(pname, commit, csv)
         }
       }
       else {

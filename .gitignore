@@ -3,6 +3,8 @@
 *.log
 tmp/
 
+scripts/jsalarm.conf
+
 # sbt specific
 .cache
 .history
