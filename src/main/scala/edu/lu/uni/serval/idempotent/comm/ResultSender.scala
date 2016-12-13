@@ -1,7 +1,8 @@
 package edu.lu.uni.serval.idempotent.comm
 
 import com.google.gson.{Gson, JsonObject}
-import com.rabbitmq.client.{Channel, Connection, ConnectionFactory}
+import com.rabbitmq.client.AMQP.BasicProperties
+import com.rabbitmq.client._
 
 /**
   * Created by darkrsw on 2016/November/22.
@@ -15,6 +16,8 @@ object ResultSender
   var LOG_QUEUE_NAME = "js-logs"
   var PLOG_QUEUE_NAME = "js-prj-logs"
   var CLOG_QUEUE_NAME = "js-commit-logs"
+
+  var TASK_QUEUE_NAME = "js-task-q"
 
   var RABBITMQ_USER = ""
   var RABBITMQ_PASSWD = ""
@@ -33,6 +36,14 @@ object ResultSender
 
     conn = factory.newConnection()
     channel = conn.createChannel()
+  }
+
+  def getOneTask(): String =
+  {
+    val response = channel.basicGet(TASK_QUEUE_NAME, true)
+    val msg = new String(response.getBody, "UTF-8")
+
+    return msg
   }
 
 

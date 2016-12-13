@@ -40,6 +40,12 @@ object AlarmCollectorByPack
       //val redisUser = prop.getProperty("redis.user")
       val redisPasswd = prop.getProperty("redis.passwd")
 
+      if(redisHost == null || redisPasswd == null) {
+        Console.println("Wrong redis conf.")
+        return false
+      }
+
+
       IdempotentRedisOps.init(redisHost, redisPasswd)
 
       ResultSender.host = prop.getProperty("rabbitmq.host")
@@ -49,10 +55,25 @@ object AlarmCollectorByPack
       ResultSender.PLOG_QUEUE_NAME = prop.getProperty("project.log.queue")
       ResultSender.CLOG_QUEUE_NAME = prop.getProperty("commit.log.queue")
 
+      ResultSender.TASK_QUEUE_NAME = prop.getProperty("js.task.queue")
+
       ResultSender.RABBITMQ_USER = prop.getProperty("rabbitmq.user")
       ResultSender.RABBITMQ_PASSWD = prop.getProperty("rabbitmq.passwd")
 
+
+      if( ResultSender.host == null || ResultSender.ALARM_QUEUE_NAME == null ||
+        ResultSender.LOG_QUEUE_NAME == null || ResultSender.PLOG_QUEUE_NAME == null ||
+        ResultSender.CLOG_QUEUE_NAME == null || ResultSender.TASK_QUEUE_NAME == null ||
+        ResultSender.RABBITMQ_USER == null || ResultSender.RABBITMQ_PASSWD == null )
+      {
+        Console.println("Wrong rabbitmq conf.")
+        return false
+      }
+
+
       ResultSender.init()
+
+
 
       return true
 

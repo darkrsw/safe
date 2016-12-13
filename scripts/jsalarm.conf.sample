@@ -16,3 +16,4 @@ alarm.queue = js-alarms
 log.queue = js-logs
 commit.log.queue = js-commit-logs
 project.log.queue = js-prj-logs
+js.task.queue = js-task-q
