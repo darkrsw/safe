@@ -96,9 +96,8 @@ object AlarmCollectorByQueue
       try {
 
         // download 7z file.
-
-        //val copyCmd = "aws s3 cp %s .".format(zipUrl)
-        val copyCmd = "cp ../tmp/repo-pack-13/%s.7z .".format(projectName) // TODO only for test
+        val copyCmd = "aws s3 cp %s .".format(zipUrl)
+        //val copyCmd = "cp ../tmp/repo-pack-13/%s.7z .".format(projectName) // TODO only for test
         val copyExitCode = Process(copyCmd, workDir).!
 
         if( copyExitCode != 0 )
@@ -121,7 +120,7 @@ object AlarmCollectorByQueue
 
         val commits = proxy.getLogAll()
 
-        /*
+
         for (c <- commits) {
           // ### Check if this <project, commit> is already processed.
           if (!IdempotentRedisOps.checkAlreadyProcessed("%s:%s".format(projectName, c.getName))) {
@@ -157,7 +156,7 @@ object AlarmCollectorByQueue
           }
 
         }
-        */
+
 
         ResultSender.sendProjectLog(projectName, "SUCCESS", "")
 
