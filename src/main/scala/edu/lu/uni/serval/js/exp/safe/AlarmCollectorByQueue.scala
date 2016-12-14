@@ -42,11 +42,16 @@ object AlarmCollectorByQueue
     while(continue)
     {
       val msg = ResultSender.getOneTask()
-
-      if( ! decode(msg) )
+      if( msg != null )
       {
-        continue = false
-        println("Poison pill received...Shutting down...")
+        if (!decode(msg)) {
+          continue = false
+          println("Poison pill received...Shutting down...")
+        }
+      } else // if the queue is empty
+      {
+        // wait for seconds
+        Thread.sleep(2000)
       }
     }
 

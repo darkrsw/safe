@@ -41,6 +41,11 @@ object ResultSender
   def getOneTask(): String =
   {
     val response = channel.basicGet(TASK_QUEUE_NAME, true)
+
+    if( response == null )
+      return null
+
+
     val msg = new String(response.getBody, "UTF-8")
 
     return msg
