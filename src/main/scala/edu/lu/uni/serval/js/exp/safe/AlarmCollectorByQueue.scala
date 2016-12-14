@@ -51,6 +51,7 @@ object AlarmCollectorByQueue
       } else // if the queue is empty
       {
         // wait for seconds
+        println("Queue empty. Enqueue poison pills to kill.")
         Thread.sleep(2000)
       }
     }
