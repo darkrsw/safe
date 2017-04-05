@@ -112,14 +112,6 @@ object AlarmCollectorByPack
           Console.println("# Processing " + projectName)
           try {
 
-            //val alarmDir = new File(outRoot, projectName)
-            //alarmDir.mkdirs()
-
-            //val logDir = new File(logRoot, projectName)
-            //logDir.mkdirs()
-
-            //val commitlog = new File(logDir, "commit-wise.log")
-
             val proxy = new GitProxy()
             proxy.setURI(x.getCanonicalPath + "/.git")
             if (!proxy.connect())
