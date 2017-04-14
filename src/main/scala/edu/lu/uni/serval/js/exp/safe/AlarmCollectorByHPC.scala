@@ -94,6 +94,7 @@ object AlarmCollectorByHPC
     val workDir = new File(WORK_DIR)
 
     // ### Check if this project is already processed.
+    // TODO change key format!!! MUST!!!
     if( ! IdempotentRedisOps.checkAlreadyProcessed("%s".format(projectName)) )
     {
       // not processed yet

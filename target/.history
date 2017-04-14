@@ -71,3 +71,5 @@ exit
 antRun clean compile
 compile
 exit
+version
+exit
