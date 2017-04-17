@@ -3,10 +3,11 @@
 #REPOPATH="/mnt/exp2/data/js/repos/repo-pack-$1"
 #OUTPATH="/mnt/exp2/data/js/output/repo-pack-$1"
 
-CONFPATH=$1
-WORKPATH=$2
+CONFPATH="/work/users/dkim/exp/js-study/script/jsalarm.conf"
+WORKPATH="/scratch/users/dkim/exp/js-study/repos/repo-pack-13/"
 
-CLASSPATH="../target/scala-2.9.2/classes:../target/pack/lib/*"
+
+CLASSPATH="/work/users/dkim/exp/js-study/safe/target/scala-2.9.3/classes:/work/users/dkim/exp/js-study/lib/*"
 
 java -cp "$CLASSPATH" -Xmx8g edu.lu.uni.serval.js.exp.safe.AlarmCollectorByHPC "$CLASSPATH" $CONFPATH $WORKPATH
 

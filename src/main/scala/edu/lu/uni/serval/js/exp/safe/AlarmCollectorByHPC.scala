@@ -56,6 +56,8 @@ object AlarmCollectorByHPC
     }
 
     ResultSender.close()
+
+    Runtime.getRuntime.exit(0)
   }
 
   def decode(json: String): Boolean =

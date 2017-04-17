@@ -49,7 +49,7 @@ object BugDetectorProxy
 
     val recorder = ProcessLogger(
       (o: String) => Console.println(o), //if( o.startsWith("OUTPUT:") ) stdout.append(o.replaceFirst("OUTPUT:","")+"\n"),
-      (e: String) => Console.println(e) //stderr.append(e+"\n")
+      (e: String) => {Console.println(e); stderr.append(e+"\n")}
     )
 
     val proc = cmd.run(recorder)
