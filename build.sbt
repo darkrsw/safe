@@ -17,6 +17,7 @@ libraryDependencies += "org.eclipse.jgit" % "org.eclipse.jgit" % "4.5.0.20160921
 libraryDependencies += "com.rabbitmq" % "amqp-client" % "4.0.0"
 libraryDependencies += "com.google.code.gson" % "gson" % "2.8.0"
 libraryDependencies += "redis.clients" % "jedis" % "2.9.0"
+libraryDependencies += "edu.lu.ul.serval" % "messaging-and-idempotency" % "1.0"
 
 packAutoSettings
 

@@ -4,7 +4,8 @@ package edu.lu.uni.serval.js.exp.safe
 import java.io.File
 
 import com.google.gson.{Gson, JsonParser}
-import edu.lu.uni.serval.idempotent.comm.{IdempotentRedisOps, ResultSender}
+import edu.lu.uni.serval.exp.store.AeroSpikeBroker
+import edu.lu.uni.serval.idempotent.comm.ResultSender
 import edu.lu.uni.serval.scm.git.{GitCommands, GitProxy}
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy
 
@@ -95,7 +96,7 @@ object AlarmCollectorByQueue
     val workDir = new File(WORK_DIR)
 
     // ### Check if this project is already processed.
-    if( ! IdempotentRedisOps.checkAlreadyProcessed("%s".format(projectName)) )
+    if( ! AeroSpikeBroker.checkAlreadyProcessed("%s".format(projectName)) )
     {
       // not processed yet
       Console.println("# Processing " + projectName)
@@ -129,7 +130,7 @@ object AlarmCollectorByQueue
 
         for (c <- commits) {
           // ### Check if this <project, commit> is already processed.
-          if (!IdempotentRedisOps.checkAlreadyProcessed("%s:%s".format(projectName, c.getName))) {
+          if (!AeroSpikeBroker.checkAlreadyProcessed("%s:%s".format(projectName, c.getName))) {
 
             // not processed yet
             println("\n\nprocessing " + c.getName + " in " + projectName)
@@ -153,7 +154,7 @@ object AlarmCollectorByQueue
             } finally {
 
               // ### Set this <project, commit> already processed.
-              IdempotentRedisOps.setAlreadyProcessed("%s:%s".format(projectName, c.getName))
+              AeroSpikeBroker.setAlreadyProcessed("%s:%s".format(projectName, c.getName))
             }
           } else {
 
@@ -182,7 +183,7 @@ object AlarmCollectorByQueue
         Process(rmCmd2, workDir).!
 
         // ### Set this project already processed.
-        IdempotentRedisOps.setAlreadyProcessed("%s".format(projectName))
+        AeroSpikeBroker.setAlreadyProcessed("%s".format(projectName))
       }
     } else {
       // already processed; skip

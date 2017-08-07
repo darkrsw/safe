@@ -437,13 +437,15 @@ object BugDetectorProxy
 
   private def vectorize(in: BugEntry2, path: String): String =
   {
+    // BugEntry2 -> (newBId, bugKind, span.getFileNameOnly, span.getBegin, span.getEnd, bugType, fullBugMsg)
+
     val startLoc = "%d:%d".format(in._4.getLine, in._4.getOffset)
     val endLoc = "%d:%d".format(in._5.getLine, in._5.getOffset)
     val vector = "%s,%s,%s,%s,%s,%s".format(quote(path), quote(in._2.toString),
       quote(startLoc), quote(endLoc), quote(in._6.toString), quote(in._7) )
     //val vector = path :: in._2.toString :: startLoc :: endLoc :: in._6.toString :: in._7 :: Nil
 
-    return vector
+    return vector // -> (path, bug type, startLoc, endLoc, bug group, full msg)
   }
 
   private def quote(in: String): String =

@@ -5,6 +5,7 @@ import redis.clients.jedis.Jedis
 /**
   * Created by darkrsw on 2016/December/05.
   */
+@deprecated
 object IdempotentRedisOps
 {
   var host = "localhost"
