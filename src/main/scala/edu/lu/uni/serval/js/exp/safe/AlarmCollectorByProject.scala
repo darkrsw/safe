@@ -38,7 +38,7 @@ object AlarmCollectorByProject
     def inLoop(x: File, mode: (String, String, String, String) => (Int, String) ) =
     {
       val filepath = x.getCanonicalPath.replace(repoDir.getCanonicalPath, "")
-      if( ! AeroSpikeBroker.checkAlreadyProcessed("%s:%s:%s".format(pname, commitHash, filepath)) )
+      if( ! AeroSpikeBroker.checkAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath)) )
       {
         // not yet processed
         println("\n\n" + getTimeString() + "processing: " + filepath)
@@ -77,7 +77,7 @@ object AlarmCollectorByProject
         //FileUtils.write(logFile, filepath + ":SUCCESS=>" + duration + "\n", "UTF-8", true)
           ResultSender.sendLog(pname, filepath, commitHash, "SUCCESS", duration.toString)
 
-        AeroSpikeBroker.setAlreadyProcessed("%s:%s:%s".format(pname, commitHash, filepath))
+        AeroSpikeBroker.setAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath))
 
       } else {
         // already processed; skip

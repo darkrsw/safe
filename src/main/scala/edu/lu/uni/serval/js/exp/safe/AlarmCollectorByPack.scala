@@ -107,7 +107,7 @@ object AlarmCollectorByPack
         val projectName = x.getName
 
         // ### Check if this project is already processed.
-        if( ! AeroSpikeBroker.checkAlreadyProcessed("%s".format(projectName)) )
+        if( ! AeroSpikeBroker.checkAlreadyProcessed("jsstudy:project:%s".format(projectName)) )
         {
           // not processed yet
           Console.println("# Processing " + projectName)
@@ -122,7 +122,7 @@ object AlarmCollectorByPack
 
             for (c <- commits) {
               // ### Check if this <project, commit> is already processed.
-              if (!AeroSpikeBroker.checkAlreadyProcessed("%s:%s".format(projectName, c.getName))) {
+              if (!AeroSpikeBroker.checkAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))) {
 
                 // not processed yet
                 println("\n\nprocessing " + c.getName + " in " + projectName)
@@ -146,7 +146,7 @@ object AlarmCollectorByPack
                 } finally {
 
                   // ### Set this <project, commit> already processed.
-                  AeroSpikeBroker.setAlreadyProcessed("%s:%s".format(projectName, c.getName))
+                  AeroSpikeBroker.setAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))
                 }
               } else {
 
@@ -168,7 +168,7 @@ object AlarmCollectorByPack
           } finally {
 
             // ### Set this project already processed.
-            AeroSpikeBroker.setAlreadyProcessed("%s".format(projectName))
+            AeroSpikeBroker.setAlreadyProcessed("jsstudy:project:%s".format(projectName))
           }
         } else {
           // already processed; skip
