@@ -86,7 +86,7 @@ object AlarmCollectorByHPC
       }
 
     } catch {
-      case e: Throwable => { Console.err.println("Error in alarm recoding", e); return false }
+      case e: Throwable => { Console.err.println("Error in alarm recoding", e); e.printStackTrace(); return false }
     }
   }
 
