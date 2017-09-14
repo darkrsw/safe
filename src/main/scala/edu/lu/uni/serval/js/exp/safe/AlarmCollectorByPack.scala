@@ -3,7 +3,8 @@ package edu.lu.uni.serval.js.exp.safe
 import java.io.{File, FileReader}
 import java.util.Properties
 
-import edu.lu.uni.serval.exp.store.AeroSpikeBroker
+import edu.lu.uni.serval.exp.store.RedisBroker
+import edu.lu.uni.serval.exp.store.RedisBroker._
 import edu.lu.uni.serval.idempotent.comm.ResultSender
 import edu.lu.uni.serval.scm.git.{GitCommands, GitProxy}
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy
@@ -40,6 +41,7 @@ object AlarmCollectorByPack
       val redisHost = prop.getProperty("redis.host")
       //val redisUser = prop.getProperty("redis.user")
       val redisPasswd = prop.getProperty("redis.passwd")
+      val redisTable = prop.getProperty("redis.table")
 
       if(redisHost == null || redisPasswd == null) {
         Console.println("Wrong redis conf.")
@@ -47,7 +49,8 @@ object AlarmCollectorByPack
       }
 
 
-      AeroSpikeBroker.init(redisHost, redisPasswd)
+      RedisBroker.init(redisHost, redisPasswd)
+      RedisBroker.table = redisTable.toInt
 
       ResultSender.host = prop.getProperty("rabbitmq.host")
 
@@ -71,10 +74,7 @@ object AlarmCollectorByPack
         return false
       }
 
-
       ResultSender.init()
-
-
 
       return true
 
@@ -107,7 +107,7 @@ object AlarmCollectorByPack
         val projectName = x.getName
 
         // ### Check if this project is already processed.
-        if( ! AeroSpikeBroker.checkAlreadyProcessed("jsstudy:project:%s".format(projectName)) )
+        if( ! checkAlreadyProcessed("jsstudy:project:%s".format(projectName)) )
         {
           // not processed yet
           Console.println("# Processing " + projectName)
@@ -122,7 +122,7 @@ object AlarmCollectorByPack
 
             for (c <- commits) {
               // ### Check if this <project, commit> is already processed.
-              if (!AeroSpikeBroker.checkAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))) {
+              if (! checkAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))) {
 
                 // not processed yet
                 println("\n\nprocessing " + c.getName + " in " + projectName)
@@ -146,7 +146,7 @@ object AlarmCollectorByPack
                 } finally {
 
                   // ### Set this <project, commit> already processed.
-                  AeroSpikeBroker.setAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))
+                  setAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))
                 }
               } else {
 
@@ -168,7 +168,7 @@ object AlarmCollectorByPack
           } finally {
 
             // ### Set this project already processed.
-            AeroSpikeBroker.setAlreadyProcessed("jsstudy:project:%s".format(projectName))
+            setAlreadyProcessed("jsstudy:project:%s".format(projectName))
           }
         } else {
           // already processed; skip

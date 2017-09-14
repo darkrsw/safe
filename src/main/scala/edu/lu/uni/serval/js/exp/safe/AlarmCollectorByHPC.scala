@@ -3,7 +3,7 @@ package edu.lu.uni.serval.js.exp.safe
 import java.io.File
 
 import com.google.gson.{Gson, JsonParser}
-import edu.lu.uni.serval.exp.store.AeroSpikeBroker
+import edu.lu.uni.serval.exp.store.RedisBroker._
 import edu.lu.uni.serval.idempotent.comm.ResultSender
 import edu.lu.uni.serval.scm.git.{GitCommands, GitProxy}
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy
@@ -98,7 +98,7 @@ object AlarmCollectorByHPC
 
     // ### Check if this project is already processed.
     // TODO change key format!!! MUST!!!
-    if( ! AeroSpikeBroker.checkAlreadyProcessed("jsstudy:project:%s".format(projectName)) )
+    if( ! checkAlreadyProcessed("jsstudy:project:%s".format(projectName)) )
     {
       // not processed yet
       Console.println("# Processing " + projectName)
@@ -117,7 +117,7 @@ object AlarmCollectorByHPC
 
         for (c <- commits) {
           // ### Check if this <project, commit> is already processed.
-          if (!AeroSpikeBroker.checkAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))) {
+          if (! checkAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))) {
 
             // not processed yet
             println("\n\nprocessing " + c.getName + " in " + projectName)
@@ -141,7 +141,7 @@ object AlarmCollectorByHPC
             } finally {
 
               // ### Set this <project, commit> already processed.
-              AeroSpikeBroker.setAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))
+              setAlreadyProcessed("jsstudy:commit:%s:%s".format(projectName, c.getName))
             }
           } else {
 
@@ -170,7 +170,7 @@ object AlarmCollectorByHPC
         Process(rmCmd2, workDir).!
 
         // ### Set this project already processed.
-        AeroSpikeBroker.setAlreadyProcessed("jsstudy:project:%s".format(projectName))
+        setAlreadyProcessed("jsstudy:project:%s".format(projectName))
       }
     } else {
       // already processed; skip

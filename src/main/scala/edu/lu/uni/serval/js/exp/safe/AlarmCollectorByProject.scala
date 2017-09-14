@@ -3,7 +3,7 @@ package edu.lu.uni.serval.js.exp.safe
 import java.io.File
 import java.util.concurrent.{ConcurrentLinkedQueue, Future}
 
-import edu.lu.uni.serval.exp.store.AeroSpikeBroker
+import edu.lu.uni.serval.exp.store.RedisBroker._
 import edu.lu.uni.serval.idempotent.comm.ResultSender
 import kr.ac.kaist.jsaf.shell.BugDetectorProxy
 import kr.ac.kaist.jsaf.utils.file.FileScanner
@@ -38,7 +38,7 @@ object AlarmCollectorByProject
     def inLoop(x: File, mode: (String, String, String, String) => (Int, String) ) =
     {
       val filepath = x.getCanonicalPath.replace(repoDir.getCanonicalPath, "")
-      if( ! AeroSpikeBroker.checkAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath)) )
+      if( ! checkAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath)) )
       {
         // not yet processed
         println("\n\n" + getTimeString() + "processing: " + filepath)
@@ -77,7 +77,7 @@ object AlarmCollectorByProject
         //FileUtils.write(logFile, filepath + ":SUCCESS=>" + duration + "\n", "UTF-8", true)
           ResultSender.sendLog(pname, filepath, commitHash, "SUCCESS", duration.toString)
 
-        AeroSpikeBroker.setAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath))
+        setAlreadyProcessed("jsstudy:file:%s:%s:%s".format(pname, commitHash, filepath))
 
       } else {
         // already processed; skip
